@@ -1,1 +1,0 @@
-O início do desastre

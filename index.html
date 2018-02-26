@@ -1,32 +1,43 @@
-<center>
-
-	<h1>PEREZJQUIM</h1>
-
-		<br><br><h2>Main GitHub Repositories of mine:</h2>
-
-		<form name="options" onsubmit="document.options.action = selected">
-
-			<h4>General purposes</h4>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
 		
-				<input type="submit" onclick="selected=this.value" value="flexyflex" >
-				&emsp;&emsp;
-				<input type="submit" onclick="selected=this.value" value="flexyflex-python" >
-		
-			<h4>Productivity</h4>
-		
-				<input type="submit" onclick="selected=this.value" value="sgit" >
-				&emsp;&emsp;
-				<input type="submit" onclick="selected=this.value" value="mkmake" >
-				&emsp;&emsp;
-				<input type="submit" onclick="selected=this.value" value="mkproj" >
-				&emsp;&emsp;
-				<input type="submit" onclick="selected=this.value" value="Candroid" >
+		<!---  IMPORTS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
 	
-		</form>
+	<body>
+	
+		<div class="container">
 		
-		<br><br><h2> External links </h2>
+			<div class="jumbotron">
+				<h1>PEREZJQUIM</h1>
+			</div>
 		
-			<h4><a href="https://github.com/perezjquim">GitHub</a></h4>
-			<h4><a href="https://linkedin.com/in/perezjquim">LinkedIn</a></h4>
+			<ul class="nav nav-tabs" >
+				  <li class="active">	<a data-toggle="tab" href="#home">Home</a></li>
+				  <li>							<a data-toggle="tab" href="#general_purposes">General purposes</a></li>
+				  <li>							<a data-toggle="tab" href="#1">1</a></li>
+				  <li>							<a data-toggle="tab" href="#2">2</a></li>
+			</ul>
+			
+				<script>
+					$(document).ready(function(){
+					    $(".nav-tabs a").click(function(){
+						   $(this).tab('show');
+						   $(this).load(this.id.substr(3).toLowerCase() + '.html').siblings().html('');
+						   alert(this.id.substr(3).toLowerCase() + '.html');
+					    });
+					});
+				</script>
 		
-</center>
+			
+		</div>
+		
+	</body>
+		
+<html>
+	

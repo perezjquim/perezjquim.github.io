@@ -22,7 +22,7 @@
 	$(document).ready(function(){
 	    $(".nav-default a").click(function(){
 		   $(this).tab('show');
-		   $("#prod-tab").html("object <data=\""+$(location).attr('href').replace("index.html#",$('.nav-default .active > a').attr('href').substr(1))+"\"");
+		   $("#prod-tab").html('object <data="'+$(location).attr('href').replace("index.html#",$('.nav-default .active > a').attr('href').substr(1))+'"');
 		   alert($(location).attr('href').replace("index.html#",$('.nav-default .active > a').attr('href').substr(1)));
 	    });
 	});

@@ -19,7 +19,7 @@
       
       <div class="modal-body">
         
-        <object id="repo-page" type="text/html" data=""  width="820px" height="1000px" >
+        <object id="repo-page" type="text/html" data="about:blank"  width="820px" height="1000px" >
       
       </div>
     
@@ -32,7 +32,6 @@
 <script>
 	$(".nav-default a").click(function()
 	{
-		$("#repo-page").data = $(this).attr('href');
-		alert($(this).attr("href"));
+		$("#repo-page").attr("data") = "https://perezjquim.github.io/"+$(this).attr('href');
 	});
 </script>

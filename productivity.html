@@ -1,11 +1,29 @@
+<br>
 <form name="options" onsubmit="document.options.action = selected">
 
-		<input type="submit" onclick="selected=this.value" value="sgit" >
-		&emsp;&emsp;
-		<input type="submit" onclick="selected=this.value" value="mkmake" >
-		&emsp;&emsp;
-		<input type="submit" onclick="selected=this.value" value="mkproj" >
-		&emsp;&emsp;
+		<input type="submit" onclick="selected=this.value" value="sgit" ><br>
+		<input type="submit" onclick="selected=this.value" value="mkmake" ><br>
+		<input type="submit" onclick="selected=this.value" value="mkproj" ><br>
 		<input type="submit" onclick="selected=this.value" value="Candroid" >
 
 </form>
+<br>
+
+<ul class="nav nav-default" >
+	  <li> <a data-toggle="tab" href="#sgit">Sgit</a></li>
+	  <li>	<a data-toggle="tab" href="#mkmake">Mkmake</a></li>
+	  <li>	<a data-toggle="tab" href="#mkproj">Productivity</a></li>
+	  <li>	<a data-toggle="tab" href="#candroid">Candroid</a></li>
+</ul>
+
+<div id="prod-tab"></div>
+
+<script>
+	$(document).ready(function(){
+	    $(".nav-default a").click(function(){
+		   $(this).tab('show');
+		   $("#prod-tab").html("object <data=\""+$(location).attr('href').replace("index.html#",$('.nav-default .active > a').attr('href').substr(1))+"\"");
+		   alert($(location).attr('href').replace("index.html#",$('.nav-default .active > a').attr('href').substr(1)));
+	    });
+	});
+</script>

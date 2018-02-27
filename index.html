@@ -17,24 +17,16 @@
 				<h1>PEREZJQUIM</h1>
 			</div>
 		
-			<ul class="nav nav-tabs" >
+			<ul class="nav nav-tabs" id="tabs">
 				  <li class="active">	<a data-toggle="tab" href="#home">Home</a></li>
-				  <li>							<a data-toggle="tab" href="#general_purposes">General purposes</a></li>
-				  <li>							<a data-toggle="tab" href="#productivity">Productivity</a></li>
+				  <li>							<a data-toggle="tab" href="#personalrepos">Personal Repositories</a></li>
 				  <li>							<a data-toggle="tab" href="#external">External links</a></li>
 			</ul>
 			
 			<div id="content">
 			</div>
 			
-				<script>
-					$(document).ready(function(){
-					    $(".nav-tabs a").click(function(){
-						   $(this).tab('show');
-						   $("#content").load($('.nav-tabs .active > a').attr('href').substr(1)+".html");
-					    });
-					});
-				</script>
+				<script src="index.js"></script>
 		
 			
 		</div>

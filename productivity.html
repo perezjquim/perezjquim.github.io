@@ -1,8 +1,8 @@
 <ul class="nav nav-default" >
-	  <li> <a data-toggle="modal" href="#sgit" data-target="#modal" >Sgit</a>  </li> 
-	  <li> <a data-toggle="modal" href="#mkmake" data-target="#modal">Mkmake</a>  </li> 
-	  <li> <a data-toggle="modal" href="#mkproj" data-target="#modal">Mkproj</a>  </li> 
-	  <li> <a data-toggle="modal" href="#candroid" data-target="#modal">Candroid</a>  </li> 
+	  <li> <a data-toggle="modal" href="#sgit" 			data-target="#modal">Sgit</a>  </li> 
+	  <li> <a data-toggle="modal" href="#mkmake" 	data-target="#modal">Mkmake</a>  </li> 
+	  <li> <a data-toggle="modal" href="#mkproj" 		data-target="#modal">Mkproj</a>  </li> 
+	  <li> <a data-toggle="modal" href="#Candroid" 	data-target="#modal">Candroid</a>  </li> 
 </ul>
 
 <div id="modal" class="modal fade" role="dialog">
@@ -17,9 +17,9 @@
       
       </div>
       
-      <div class="modal-body">
-        
-        <object id="repo-page" type="text/html" data="about:blank"  width="820px" height="1000px" >
+      <div class="modal-body" >
+      
+		<div id="repo"></div> 
       
       </div>
     
@@ -30,8 +30,16 @@
 </div>
 
 <script>
+$(document).ready(function()
+{
 	$(".nav-default a").click(function()
 	{
-		$("#repo-page").attr("data") = "https://perezjquim.github.io/"+$(this).attr('href');
+		$("#repo").load("https://perezjquim.github.io/"+$(this).attr('href').substr(1));
 	});
+});
+	
 </script>
+
+</div>
+
+

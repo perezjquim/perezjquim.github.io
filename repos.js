@@ -4,7 +4,7 @@ $(document).ready(function()
 	{
         BootstrapDialog.show(
         {
-            title: 'Default Title',
+            title: 'Repository',
             message: function(dialog) 
             {
                 var $message = $('<div></div>');

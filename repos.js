@@ -2,17 +2,20 @@ $(document).ready(function()
 {
 	$(".nav-default a").click(function()
 	{
-		BootstrapDialog.show({
-		  title: '',
-            message: function(dialog) {
+        BootstrapDialog.show(
+        {
+            title: 'Default Title',
+            message: function(dialog) 
+            {
                 var $message = $('<div></div>');
-                var pageToLoad = dialog.getData('pageToLoad');
-                $message.load(pageToLoad);
+                var repo = dialog.getData('repo');
+                $message.load(repo);
         
                 return $message;
             },
-            data: {
-                'pageToLoad': "https://perezjquim.github.io/"+$(this).attr('href').substr(1)
+            data: 
+            {
+                'repo': "https://perezjquim.github.io/"+$(this).attr('href').substr(1)
             }
         });
 	});

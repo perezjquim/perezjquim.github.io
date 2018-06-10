@@ -18,7 +18,7 @@ tabs =
 			},
 			{
 				"name":"Candroid",
-				"reponame":"candroid"
+				"reponame":"Candroid"
 			},
 			{
 				"name":"Flexyflex",
@@ -40,7 +40,7 @@ tabs =
 		[
 			{
 				"name":"NoAllerg",
-				"reponame":"noallerg"
+				"reponame":"NoAllerg"
 			},
 			{
 				"name":"CALUMa",
@@ -66,7 +66,7 @@ tabs =
 			},
 			{
 				"name":"SharedPreferencesHelper",
-				"reponame":"sharedprefshelper"
+				"reponame":"sharedprefhelper"
 			},
 			{
 				"name":"PermissionChecker",

@@ -1,0 +1,91 @@
+tabs =
+[
+	{
+		"name": "Scripts or Applets",
+		"repos":
+		[
+			{
+				"name":"Sgit",
+				"reponame":"sgit"
+			},
+			{
+				"name":"Mkmake",
+				"reponame":"mkmake"
+			},
+			{
+				"name":"Mkproj",
+				"reponame":"mkproj"
+			},
+			{
+				"name":"Candroid",
+				"reponame":"candroid"
+			},
+			{
+				"name":"Flexyflex",
+				"reponame":"flexyflex"
+			},
+			{
+				"name":"Flexyflex (Python)",
+				"reponame":"flexyflex-python"
+			},
+			{
+				"name":"Flexyflex (C)",
+				"reponame":"flexyflex-c"
+			}
+		]
+	},
+	{
+		"name": "Android applications",
+		"repos":
+		[
+			{
+				"name":"NoAllerg",
+				"reponame":"noallerg"
+			},
+			{
+				"name":"CALUMa",
+				"reponame":"umacalendar"
+			},
+			{
+				"name":"Protodroid",
+				"reponame":"protodroid"
+			},
+			{
+				"name":"KolmiSender",
+				"reponame":"kolmisender"
+			}
+		]
+	},
+	{
+		"name":"Android libraries",
+		"repos":
+		[
+			{
+				"name":"UIHelper",
+				"reponame":"uihelper"
+			},
+			{
+				"name":"SharedPreferencesHelper",
+				"reponame":"sharedprefshelper"
+			},
+			{
+				"name":"PermissionChecker",
+				"reponame":"permissionchecker"
+			},
+			{
+				"name":"AlarmHelper",
+				"reponame":"alarmhelper"
+			}
+		]
+	},
+	{
+		"name":"Other repositories",
+		"repos":
+		[
+			{
+				"name":"FlappyCoiso",
+				"reponame":"flappycoiso"
+			}
+		]
+	}
+];

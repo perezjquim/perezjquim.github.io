@@ -8,6 +8,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.9/js/bootstrap-dialog.min.js"></script>
+		<script src="tabs.json"></script>
+		<script src="index.js"></script>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">		
 		<meta charset="utf-8">
@@ -26,19 +28,12 @@
 				</h1>
 			</div>
 		
-			<ul class="nav nav-tabs" >
-				  <li class="active">	<a data-toggle="tab" href="#home">Home</a></li>
-				  <li>							<a data-toggle="tab" href="#scripts">Scripts/Applets</a></li>
-				  <li>							<a data-toggle="tab" href="#androidapps">Android applications</a></li>
-				  <li>							<a data-toggle="tab" href="#androidlibs">Android libraries</a></li>				  
-				  <li>							<a data-toggle="tab" href="#other">Other repositories</a></li>				  
-				  <li>							<a data-toggle="tab" href="#external">External links</a></li>
+			<ul class="nav nav-tabs" id="tabs" >
+				  <li class="active">	<a href="#home">Home</a></li>	  
+				  <li>	<a href="#external">External links</a></li>
 			</ul>
 			
-			<div id="content">
-			</div>
-			
-			<script src="index.js"></script>
+			<div id="content"></div>
 			
 		</div>
 		

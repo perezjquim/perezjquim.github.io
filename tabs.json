@@ -35,7 +35,7 @@ tabs =
 		]
 	},
 	{
-		"name": "Android applications",
+		"name": "Android (Apps)",
 		"repos":
 		[
 			{
@@ -61,7 +61,7 @@ tabs =
 		]
 	},
 	{
-		"name":"Android libraries",
+		"name":"Android (Libraries)",
 		"repos":
 		[
 			{
@@ -79,6 +79,10 @@ tabs =
 			{
 				"name":"AlarmHelper",
 				"reponame":"alarmhelper"
+			},
+			{
+				"name":"DBManager",
+				"reponame":"dbmanager"
 			}
 		]
 	},

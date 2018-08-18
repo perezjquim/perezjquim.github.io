@@ -57,6 +57,10 @@ tabs =
 			{
 				"name":"tiny",
 				"reponame":"tiny"
+			},
+			{
+				"name":"AB Alarm",
+				"reponame":"abalarm"
 			}			
 		]
 	},

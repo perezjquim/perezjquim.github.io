@@ -35,7 +35,7 @@ tabs =
 		]
 	},
 	{
-		"name": "Android (Apps)",
+		"name": "Android apps",
 		"repos":
 		[
 			{
@@ -65,7 +65,7 @@ tabs =
 		]
 	},
 	{
-		"name":"Android (Libraries)",
+		"name":"Android libraries",
 		"repos":
 		[
 			{

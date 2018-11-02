@@ -1,43 +1,146 @@
+<!doctype html>
 <html>
-	<head>
-		<!---  CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.9/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
 
-		<!--- JS -->		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.9/js/bootstrap-dialog.min.js"></script>
-		<script src="tabs.json"></script>
-		<script src="index.js"></script>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">		
-		<meta charset="utf-8">
-		<title>PEREZJQUIM</title>
-		
-	</head>
-	
-	<body>
-	
-		<div class="container">
-		
-			<div class="jumbotron">
-				<h1>
-					<img src="https://avatars2.githubusercontent.com/u/26201276?s=460&v=4" width="70" height="70" class="img-rounded">
-					PEREZJQUIM
-				</h1>
-			</div>
-		
-			<ul class="nav nav-tabs" id="tabs" >
-				  <li class="active">	<a href="#home">Home</a></li>	  
-				  <li>	<a href="#external">External links</a></li>
-			</ul>
-			
-			<div id="content"></div>
-			
-		</div>
-		
-	</body>
-		
-<html>
-	
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEREZJQUIM</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+    <link rel="shortcut icon" href="https://avatars2.githubusercontent.com/u/26201276?s=460&v=4">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  </head>
+
+  <body>
+    <main role="main">
+      <article id="webslides">
+
+        <section>
+          <div class="wrap aligncenter">
+            <h1><strong>perezjquim</strong></h1>
+            <p class="text-intro">GitHub showcase page
+            </p>
+            <p>
+              <a href="https://www.github.com/perezjquim" class="button zoomIn" title="GitHub">
+                <svg class="fa-github">
+                  <use xlink:href="#fa-github"></use>
+                </svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/perezjquim" class="button zoomIn" title="LinkedIn">
+                <svg class="fa-linkedin">
+                  <use xlink:href="#fa-linkedin"></use>
+                </svg>
+                LinkedIn
+              </a>              
+            </p>
+          </div>
+        </section>
+
+	  <section>
+	  	<div class="wrap">
+            <h2>Portfolio</h2>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2>
+	              <svg class="fa-terminal">
+	                <use xlink:href="#fa-terminal"/>
+	              </svg>
+                    Scripts/applets
+                  </h2>
+                </div>
+              </li>            	
+              <li>
+                <div>
+                  <h2>
+	              <svg class="fa-android">
+	                <use xlink:href="#fa-android"/>
+	              </svg>
+                    Android applications
+                  </h2>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+	              <svg class="fa-code-fork">
+	                <use xlink:href="#fa-code-fork"/>
+	              </svg>
+                    Android libraries
+                  </h2>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+	              <svg class="fa-code">
+	                <use xlink:href="#fa-code"/>
+	              </svg>
+                    Other repositories
+                  </h2>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <script src="tabs.json"></script>
+        <script>
+  		tabs.forEach((tab)=>
+		{
+			tab.repos.forEach((repo) => 
+			{
+				$("#webslides").append(
+					"<section>"+
+						"<div class='wrap'>"+
+							"<div class='grid vertical-align'>"+
+								"<div class='column'>"+
+									"<h3><strong>"+tab.name+"</strong></h3>"+
+									"<p class='text-intro'>"+repo.name+"</p>"+
+								"</div>"+
+								"<div class='column'>"+
+									"<pre><iframe src='https://perezjquim.github.io/"+repo.reponame+"/'></iframe></pre>"+
+								"</div>"+
+							"</div>");
+			});
+		});
+        </script>
+
+      </article>
+    </main>
+
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <script defer src="static/js/svg-icons.js"></script>
+
+
+    <style>
+    	.features > li
+    	{
+    		width: 30% !important;
+    	}
+    	pre
+    	{
+    		margin: 0;
+    		padding: 0;
+    		height: 90vh;
+    		overflow: hidden;
+    	}
+    	iframe
+    	{
+    		width: 100% !important;
+    		height: 100%;
+    	}
+    	section
+    	{
+    		height: 100%;
+    	}
+    </style>
+
+  </body>
+</html>

@@ -88,34 +88,12 @@
         </section>
 
         <script src="tabs.json"></script>
-        <script>
-  		tabs.forEach((tab)=>
-		{
-			tab.repos.forEach((repo) => 
-			{
-				$("#webslides").append(
-					"<section>"+
-						"<div class='wrap'>"+
-							"<div class='grid vertical-align'>"+
-								"<div class='column'>"+
-									"<h3><strong>"+tab.name+"</strong></h3>"+
-									"<p class='text-intro'>"+repo.name+"</p>"+
-								"</div>"+
-								"<div class='column'>"+
-									"<pre><iframe src='https://perezjquim.github.io/"+repo.reponame+"/'></iframe></pre>"+
-								"</div>"+
-							"</div>");
-			});
-		});
-        </script>
+        <script src="index.js" defer async></script>
 
       </article>
     </main>
 
     <script src="static/js/webslides.js"></script>
-    <script>
-      window.ws = new WebSlides();
-    </script>
 
     <script defer src="static/js/svg-icons.js"></script>
 

@@ -22,3 +22,8 @@ section
 {
 	height: 25vh;
 }
+.button[href*='linkedin']
+{
+	border-color: dodgerblue;
+	background-color: dodgerblue;
+}

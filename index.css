@@ -1,29 +1,9 @@
-.features > li
+div > pre > iframe
 {
-	width: 30% !important;
+	height: 70vh !important;
+	width: 100% !important;
 }
 pre
 {
-	margin: 0;
-	padding: 0;
-	height: 90vh;
-	overflow: hidden;
-}
-iframe
-{
-	width: 100% !important;
-	height: 100%;
-}
-section
-{
-	height: 100%;
-}
-#section-1 > div > img
-{
-	height: 25vh;
-}
-.button[href*='linkedin']
-{
-	border-color: dodgerblue;
-	background-color: dodgerblue;
+	text-align: center !important;
 }

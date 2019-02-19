@@ -89,7 +89,7 @@ tabs = [
         {
                 "name": "rCSS",
                 "reponame": "rcss"
-        }
+        },
         {
                 "name": "FlappyCoiso",
                 "reponame": "flappycoiso"

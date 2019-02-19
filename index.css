@@ -1,9 +1,21 @@
-div > pre > iframe
-{
-	height: 70vh !important;
-	width: 100% !important;
+div>pre>iframe {
+        height: 70vh !important;
+        width: 100% !important;
 }
-pre
-{
-	text-align: center !important;
+pre {
+        text-align: center !important;
+}
+[social] {
+        display: flex;
+        justify-content: space-around;
+}
+svg {
+        height: 10vh !important;
+        width: auto !important;
+}
+a[href*='linkedin'] {
+        background-color: dodgerblue;
+}
+a[href*='github'] {
+        background-color: rebeccapurple;
 }

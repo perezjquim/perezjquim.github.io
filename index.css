@@ -12,10 +12,16 @@ pre {
 svg {
         height: 10vh !important;
         width: auto !important;
+        transform: scale(0.5) !important;
+	transition: 0.25s !important;        
 }
 a[href*='linkedin'] {
         background-color: dodgerblue;
 }
 a[href*='github'] {
         background-color: rebeccapurple;
+}
+svg:hover
+{
+	transform: scale(1) !important;
 }

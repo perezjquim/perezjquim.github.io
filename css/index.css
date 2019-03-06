@@ -25,3 +25,7 @@ a:hover > svg
 {
 	transform: scale(1) !important;
 }
+[home] > img
+{
+        height: 25% !important;
+}

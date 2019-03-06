@@ -1,0 +1,17 @@
+{
+	"title": "perezjquim",
+	"subtitle": "GitHub showcase page",
+	"social":
+	[
+		{
+			"icon": "fa-github",
+			"link" : "https://www.github.com/perezjquim",
+			"title": "GitHub"
+		},
+		{
+			"icon":"fa-linkedin",
+			"link" : "https://www.linkedin.com/in/perezjquim",
+			"title": "LinkedIn"
+		}
+	]
+}

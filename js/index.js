@@ -5,7 +5,7 @@ $(document).ready(function()
         //
         const templates = {
                 "portfolio-item": '<li>' + '<div>' + '<svg class="@icon@">' + '<use xlink:href="#@icon@">' + '</use>' + '</svg>' + '@name@' + '</div>' + '</li>',
-                "repo-section": "<section>" + "<div>" + "<div>" + "<h3><strong>@name@</strong></h3>" + "<p class='text-intro'>@label@</p>" + "</div>" + "<div>" + "<pre><iframe src='/@reponame@'></iframe></pre>" + "</div>" + "</section>",
+                "repo-section": "<section>" + "<div>" + "<div>" + "<h3><strong>@name@</strong></h3>" + "<p class='text-intro'>@label@</p>" + "</div>" + "<div>" + "<pre><iframe src='/@reponame@/'></iframe></pre>" + "</div>" + "</section>",
                 "home":
                 {
                         "base": '<img src="lib/images/avatar.jpeg"/>' + '<h2>' + '<strong>' + '@title@' + '</strong>' + '</h2>' + '<p>' + '@subtitle@' + '</p>' ,

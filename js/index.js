@@ -8,8 +8,8 @@ $(document).ready(function()
                 "repo-section": "<section>" + "<div>" + "<div>" + "<h3><strong>@name@</strong></h3>" + "<p class='text-intro'>@label@</p>" + "</div>" + "<div>" + "<pre><iframe src='/@reponame@'></iframe></pre>" + "</div>" + "</section>",
                 "home":
                 {
-                        "base": '<section home>' + '<img height="25%" src="lib/images/avatar.jpeg"/>' + '<h2>' + '<strong>' + '@title@' + '</strong>' + '</h2>' + '<p>' + '@subtitle@' + '</p>' + '<div social>' + '</div>' + '</section>',
-                        "social-item": '<a href="@link@" title="@title@" style="background-color:\"@color@\";">' + '<svg class="@icon@">' + '<use xlink:href="#@icon@">' + '</use>' + '</svg>' + '</a>'
+                        "base": '<img height="25%" src="lib/images/avatar.jpeg"/>' + '<h2>' + '<strong>' + '@title@' + '</strong>' + '</h2>' + '<p>' + '@subtitle@' + '</p>' + '<div social>',
+                        "social-item": '<a href="@link@" title="@title@" style="background-color:\'@color@\';">' + '<svg class="@icon@">' + '<use xlink:href="#@icon@">' + '</use>' + '</svg>' + '</a>'
                 }
         };
         //
@@ -32,11 +32,11 @@ $(document).ready(function()
         function bindHome(home)
         {
                 const oHome = templates["home"]["base"].replace(/@title@/g, home.title).replace(/@subtitle@/g, home.subtitle);
-                $("[content]").append(oHome);
+                $("[home]").prepend(oHome);
                 home.social.forEach((s) =>
                 {
                         const oSocial = templates["home"]["social-item"].replace(/@link@/g, s.link).replace(/@title@/g, s.title, /@icon@/g, s.icon).replace(/@color@/g,s.color);
-                        $("[home]").append(oSocial);
+                        $("[social]").append(oSocial);
                 });
         }
 

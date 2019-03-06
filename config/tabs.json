@@ -1,97 +1,101 @@
-tabs = [
+[
 {
         "name": "Scripts or Applets",
+        "icon": "fa-terminal",
         "repos": [
         {
-                "name": "Sgit",
+                "label": "Sgit",
                 "reponame": "sgit"
         },
         {
-                "name": "Mkmake",
+                "label": "Mkmake",
                 "reponame": "mkmake"
         },
         {
-                "name": "Mkproj",
+                "label": "Mkproj",
                 "reponame": "mkproj"
         },
         {
-                "name": "Candroid",
+                "label": "Candroid",
                 "reponame": "Candroid"
         },
         {
-                "name": "Flexyflex",
+                "label": "Flexyflex",
                 "reponame": "flexyflex"
         },
         {
-                "name": "Flexyflex (Python)",
+                "label": "Flexyflex (Python)",
                 "reponame": "flexyflex-python"
         },
         {
-                "name": "Flexyflex (C)",
+                "label": "Flexyflex (C)",
                 "reponame": "flexyflex-c"
         }]
 },
 {
         "name": "Android apps",
+        "icon": "fa-android",
         "repos": [
         {
-                "name": "NoAllerg",
+                "label": "NoAllerg",
                 "reponame": "NoAllerg"
         },
         {
-                "name": "CALUMa",
+                "label": "CALUMa",
                 "reponame": "umacalendar"
         },
         {
-                "name": "Protodroid",
+                "label": "Protodroid",
                 "reponame": "protodroid"
         },
         {
-                "name": "KolmiSender",
+                "label": "KolmiSender",
                 "reponame": "kolmisender"
         },
         {
-                "name": "tiny",
+                "label": "tiny",
                 "reponame": "tiny"
         },
         {
-                "name": "AB Alarm",
+                "label": "AB Alarm",
                 "reponame": "abalarm"
         }]
 },
 {
         "name": "Android libraries",
+        "icon": "fa-code-fork",
         "repos": [
         {
-                "name": "UIHelper",
+                "label": "UIHelper",
                 "reponame": "uihelper"
         },
         {
-                "name": "SharedPreferencesHelper",
+                "label": "SharedPreferencesHelper",
                 "reponame": "sharedprefhelper"
         },
         {
-                "name": "PermissionChecker",
+                "label": "PermissionChecker",
                 "reponame": "permissionchecker"
         },
         {
-                "name": "AlarmHelper",
+                "label": "AlarmHelper",
                 "reponame": "alarmhelper"
         },
         {
-                "name": "DBManager",
+                "label": "DBManager",
                 "reponame": "dbmanager"
         }]
 },
 {
         "name": "Other repositories",
+        "icon": "fa-code",
         "repos": [
         {
-                "name": "rCSS",
+                "label": "rCSS",
                 "reponame": "rcss"
         },
         {
-                "name": "FlappyCoiso",
+                "label": "FlappyCoiso",
                 "reponame": "flappycoiso"
         }]
-}];
+}]

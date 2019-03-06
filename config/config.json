@@ -1,0 +1,14 @@
+{
+        "configure":
+        {
+                "autoSlide": 50000
+        },
+        "initialize":
+        {
+                "controls": true,
+                "progress": true,
+                "history": true,
+                "center": true,
+                "transition": "slide"
+        }
+}

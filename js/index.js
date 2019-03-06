@@ -19,11 +19,11 @@ $(document).ready(function()
         {
                 tabs.forEach((tab) =>
                 {
-                        const oItem = template_li.replace(/@icon@/g, tab.icon).replace(/@name@/g, tab.name);
+                        const oItem = templates.["portfolio-item"].replace(/@icon@/g, tab.icon).replace(/@name@/g, tab.name);
                         $("[portfolio-items]").append(oItem);
                         tab.repos.forEach((repo) =>
                         {
-                                const oSection = template_section.replace(/@name@/g, tab.name).replace(/@label@/g, repo.label).replace(/@reponame@/g, repo.reponame)
+                                const oSection = templates["repo-section"].replace(/@name@/g, tab.name).replace(/@label@/g, repo.label).replace(/@reponame@/g, repo.reponame)
                                 $(".slides").append(oSection);
                         });
                 });
@@ -31,12 +31,11 @@ $(document).ready(function()
 
         function bindHome(home)
         {
-                const templates = templates.home;
-                const oHome = templates.base.replace(/@title@/g, home.title).replace(/@subtitle@/g, home.subtitle);
+                const oHome = templates.home.base.replace(/@title@/g, home.title).replace(/@subtitle@/g, home.subtitle);
                 $("[content]").append(oHome);
                 home.social.forEach((s) =>
                 {
-                        const oSocial = templates.social.replace(/@link@/g, s.link).replace(/@title@/g, s.title, /@icon@/g, s.icon);
+                        const oSocial = templates.home.social.replace(/@link@/g, s.link).replace(/@title@/g, s.title, /@icon@/g, s.icon);
                         $("[home]").append(oSocial);
                 });
         }

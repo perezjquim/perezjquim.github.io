@@ -9,6 +9,7 @@
                 "progress": true,
                 "history": true,
                 "center": true,
+                "loop": true,
                 "transition": "slide"
         }
 }

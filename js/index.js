@@ -31,11 +31,11 @@ $(document).ready(function()
 
         function bindHome(home)
         {
-                const oHome = templates.home.base.replace(/@title@/g, home.title).replace(/@subtitle@/g, home.subtitle);
+                const oHome = templates["home"]["base"].replace(/@title@/g, home.title).replace(/@subtitle@/g, home.subtitle);
                 $("[content]").append(oHome);
                 home.social.forEach((s) =>
                 {
-                        const oSocial = templates.home.social.replace(/@link@/g, s.link).replace(/@title@/g, s.title, /@icon@/g, s.icon);
+                        const oSocial = templates["home"]["social-item"].replace(/@link@/g, s.link).replace(/@title@/g, s.title, /@icon@/g, s.icon);
                         $("[home]").append(oSocial);
                 });
         }

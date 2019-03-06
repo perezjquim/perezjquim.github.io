@@ -19,7 +19,7 @@ $(document).ready(function()
         {
                 tabs.forEach((tab) =>
                 {
-                        const oItem = templates.["portfolio-item"].replace(/@icon@/g, tab.icon).replace(/@name@/g, tab.name);
+                        const oItem = templates["portfolio-item"].replace(/@icon@/g, tab.icon).replace(/@name@/g, tab.name);
                         $("[portfolio-items]").append(oItem);
                         tab.repos.forEach((repo) =>
                         {

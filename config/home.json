@@ -6,12 +6,14 @@
 		{
 			"icon": "fa-github",
 			"link" : "https://www.github.com/perezjquim",
-			"title": "GitHub"
+			"title": "GitHub",
+			"color": "rebeccapurple"
 		},
 		{
 			"icon":"fa-linkedin",
 			"link" : "https://www.linkedin.com/in/perezjquim",
-			"title": "LinkedIn"
+			"title": "LinkedIn",
+			"color": "dodgerblue"
 		}
 	]
 }

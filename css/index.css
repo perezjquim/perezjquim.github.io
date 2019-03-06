@@ -13,19 +13,11 @@ svg {
         height: 10vh !important;
         width: auto !important;
         transform: scale(0.5) !important;
-	transition: 0.25s !important;        
+        transition: 0.25s !important;
 }
-a[href*='linkedin'] {
-        background-color: dodgerblue;
+a:hover>svg {
+        transform: scale(1) !important;
 }
-a[href*='github'] {
-        background-color: rebeccapurple;
-}
-a:hover > svg
-{
-	transform: scale(1) !important;
-}
-[home] > img
-{
+[home]>img {
         height: 25% !important;
 }

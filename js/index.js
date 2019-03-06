@@ -9,7 +9,7 @@ $(document).ready(function()
                 "home":
                 {
                         "base": '<section home>' + '<img height="25%" src="lib/images/avatar.jpeg"/>' + '<h2>' + '<strong>' + '@title@' + '</strong>' + '</h2>' + '<p>' + '@subtitle@' + '</p>' + '<div social>' + '</div>' + '</section>',
-                        "social-item": +'<a href="@link@" title="@title@">' + '<svg class="@icon@">' + '<use xlink:href="#@icon@">' + '</use>' + '</svg>' + '</a>'
+                        "social-item": +'<a href="@link@" title="@title@" style="background-color:\"@color@\";">' + '<svg class="@icon@">' + '<use xlink:href="#@icon@">' + '</use>' + '</svg>' + '</a>'
                 }
         };
         //
@@ -35,7 +35,7 @@ $(document).ready(function()
                 $("[content]").append(oHome);
                 home.social.forEach((s) =>
                 {
-                        const oSocial = templates["home"]["social-item"].replace(/@link@/g, s.link).replace(/@title@/g, s.title, /@icon@/g, s.icon);
+                        const oSocial = templates["home"]["social-item"].replace(/@link@/g, s.link).replace(/@title@/g, s.title, /@icon@/g, s.icon).replace(/@color@/g,s.color);
                         $("[home]").append(oSocial);
                 });
         }

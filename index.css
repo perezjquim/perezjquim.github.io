@@ -21,7 +21,7 @@ a[href*='linkedin'] {
 a[href*='github'] {
         background-color: rebeccapurple;
 }
-svg:hover
+a:hover > svg
 {
 	transform: scale(1) !important;
 }

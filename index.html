@@ -7,10 +7,14 @@
                                         PEREZJQUIM
                                 </title>
                                 <link href="lib/images/avatar.jpeg" rel="shortcut icon"/>
-                                <link href="lib/css/svg-icons.css" rel="preload stylesheet"/>
-                                <link href="lib/css/reveal.min.css" rel="preload stylesheet" type="text/css"/>
-                                <link href="lib/css/theme.min.css" rel="preload stylesheet" type="text/css"/>
-                                <link href="css/index.css" rel="preload stylesheet" type="text/css"/>                                
+                                <link as="style" href="lib/css/svg-icons.css" rel="preload stylesheet"/>
+                                <link as="style" href="lib/css/reveal.min.css" rel="preload stylesheet" type="text/css"/>
+                                <link as="style" href="lib/css/theme.min.css" rel="preload stylesheet" type="text/css"/>
+                                <link as="style" href="css/index.css" rel="preload stylesheet" type="text/css"/>
+                                <link as="script" href="lib/js/svg-icons.js" rel="preload"/>
+                                <link as="script" href="lib/js/head.min.js" rel="preload"/>
+                                <link as="script" href="lib/js/reveal.min.js" rel="preload"/>
+                                <link as="script" href="lib/js/jquery.min.js" rel="preload"/>
                                 <script src="lib/js/svg-icons.js">
                                 </script>
                                 <script src="lib/js/head.min.js">
@@ -19,7 +23,7 @@
                                 </script>
                                 <script src="lib/js/jquery.min.js">
                                 </script>
-                                <script defer async src="js/index.js">
+                                <script async defer src="js/index.js">
                                 </script>
                         </meta>
                 </meta>
@@ -27,15 +31,16 @@
 </html>
 <body>
         <div class="reveal">
-                <div class="slides" content>
-                        <section home>
-                                <div social/>
+                <div class="slides" content="">
+                        <section home="">
+                                <div social="">
+                                </div>
                         </section>
                         <section>
                                 <h2>
                                         Portfolio
                                 </h2>
-                                <ul portfolio-items>
+                                <ul portfolio-items="">
                                 </ul>
                         </section>
                 </div>

@@ -1,1 +1,66 @@
-$(document).ready(function(){function e(e,o){for(const n of o)for(var t in n){const o=new RegExp("@"+t+"@","g");e=e.replace(o,n[t])}return e}$.get("config/home.json",o=>{!function(o){$.get("templates/home/base.xml",t=>{const n=e(t,[o]);$.get("templates/home/social-item.xml",t=>{$("[home]").prepend(n),o.social.forEach(o=>{const n=e(t,[o]);$("[social]").append(n)})})})}(o),$.get("config/tabs.json",o=>{!function(o){$.get("templates/repo.xml",t=>{$.get("templates/portfolio-item.xml",t=>{o.forEach(o=>{const n=e(t,[o]);$("[portfolio-items]").append(n),o.repos.forEach(t=>{const n=e(i,[o,t]);$(".slides").append(n)})})})})}(o),$.get("config/config.json",e=>{const o=e.configure,t=e.initialize;Reveal.configure(o),Reveal.initialize(t)})})})});
+$(document).ready(function()
+{
+        function n(e, i)
+        {
+                for (const n of i)
+                        for (var o in n)
+                        {
+                                const i = new RegExp("@" + o + "@", "g");
+                                e = e.replace(i, n[o])
+                        }
+                return e
+        }
+        function fetchTemplate(path,callback)
+        {
+        	$.ajax(
+        	{
+        		type: "GET",
+        		url: "templates"+"/"+path,
+        		dataType: "xml",
+        		success: callback
+        	});
+        }
+        $.get("config/home.json", s =>
+        {
+                ! function(e)
+                {
+                       fetchTemplate("home/base.xml", base =>
+                        {
+                                const i = n(base, [e]);
+                                fetchTemplate("home/social-item.xml", ss =>
+                                {
+                                        $("[home]").prepend(i), e.social.forEach(e =>
+                                        {
+                                                const i = n(ss, [e]);
+                                                $("[social]").append(i)
+                                        })
+                                })
+                        })
+                }(s), $.get("config/tabs.json", o =>
+                {
+                        ! function(o)
+                        {
+                                fetchTemplate("repo.xml", rr =>
+                                {
+                                        fetchTemplate("portfolio-item.xml", yy =>
+                                        {
+                                                o.forEach(o =>
+                                                {
+                                                        const s = n(rr, [o]);
+                                                        $("[portfolio-items]").append(s), o.repos.forEach(e =>
+                                                        {
+                                                                const s = n(yy, [o, e]);
+                                                                $(".slides").append(s)
+                                                        })
+                                                })
+                                        })
+                                })
+                        }(o), $.get("config/config.json", e =>
+                        {
+                                const i = e.configure,
+                                        o = e.initialize;
+                                Reveal.configure(i), Reveal.initialize(o)
+                        })
+                })
+        })
+});

@@ -1,0 +1,1 @@
+<a href="@link@" title="@title@" style="background-color:@color@;"><svg class="@icon@"><use xlink:href="#@icon@"></use></svg></a>

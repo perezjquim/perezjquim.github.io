@@ -59,6 +59,10 @@
         {
                 "label": "AB Alarm",
                 "reponame": "abalarm"
+        },
+        {
+                "label": "CALUMA (v2)",
+                "reponame": "umacalendar_v2"
         }]
 },
 {

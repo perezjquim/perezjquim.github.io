@@ -1,7 +1,8 @@
 {
         "configure":
         {
-                "autoSlide": 50000
+                "autoSlide": 50000,
+                "backgroundTransition": "zoom"
         },
         "initialize":
         {

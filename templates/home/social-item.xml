@@ -1,1 +1,1 @@
-<a href="@link@" title="@title@" style="background-color:@color@;"><svg class="@icon@" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#@icon@"></use></svg></a>
+<a href="@link@" title="@title@" style="background-color:@color@;"><i class="@icon@"/></a>

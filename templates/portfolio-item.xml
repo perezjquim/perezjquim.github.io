@@ -1,1 +1,1 @@
-<li><div><svg class="@icon@" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#@icon@"></use></svg>@name@</div></li>
+<li><div><i class="@icon@"/>@name@</div></li>

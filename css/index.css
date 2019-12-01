@@ -21,3 +21,7 @@ a:hover>i {
 [home]>img {
         height: 15vh!important
 }
+.slides
+{
+        height: 100vh !important;
+}

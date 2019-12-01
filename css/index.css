@@ -1,1 +1,23 @@
-div>pre>iframe{height:70vh!important;width:100%!important}pre{text-align:center!important}[social]{display:flex;justify-content:center}i{height:10vh!important;width:auto!important;transform:scale(.5)!important;transition:.25s!important}a:hover>i{transform:scale(1)!important}[home]>img{height:25%!important}i{fill:#fff}
+div>pre>iframe {
+        height: 70vh!important;
+        width: 100%!important;
+        display: block;
+}
+pre {
+        text-align: center!important
+}
+[social] {
+        display: flex;
+        justify-content: center
+}
+i {
+        width: 5vw !important;
+        transform: scale(.5)!important;
+        transition: .25s!important;
+}
+a:hover>i {
+        transform: scale(1)!important
+}
+[home]>img {
+        height: 15vh!important
+}

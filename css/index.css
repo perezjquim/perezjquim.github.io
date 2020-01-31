@@ -2,6 +2,7 @@ div>pre>iframe {
         height: 70vh!important;
         width: 100%!important;
         display: block;
+        margin: auto;
 }
 pre {
         text-align: center!important

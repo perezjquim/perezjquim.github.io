@@ -1,1 +1,15 @@
-{"configure":{"autoSlide":40000},"initialize":{"controls":true,"progress":true,"history":true,"center":true,"loop":true,"transition":"slide"}}
+{
+        "configure":
+        {
+                "autoSlide": 40000
+        },
+        "initialize":
+        {
+                "controls": true,
+                "progress": true,
+                "history": true,
+                "center": true,
+                "loop": true,
+                "transition": "slide"
+        }
+}

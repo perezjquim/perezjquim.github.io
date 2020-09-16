@@ -94,12 +94,12 @@
                 "reponame": "rcss"
         },
 	{
-		"label": "html-includer",
-		"reponame": "HTML Includer"	
+		"label": "HTML Includer",
+		"reponame": "html-includer"	
 	},
 	{
-		"label": "html-text-internationalizer",
-		"reponame": "HTML Text Internationalizer"	
+		"label": "HTML Text Internationalizer",
+		"reponame": "html-text-internationalizer"	
 	}]
 },
 {

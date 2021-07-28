@@ -1,0 +1,95 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "com.perezjquim.showcase",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		},
+		"dataSources": {}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "images/icon.jpeg",
+			"favIcon": "images/icon.jpeg",
+			"phone": "images/icon.jpeg",
+			"phone@2": "images/icon.jpeg",
+			"tablet": "images/icon.jpeg",
+			"tablet@2": "images/icon.jpeg"
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "com.perezjquim.showcase.view.App",
+			"type": "XML",
+			"async": true
+		},
+		"dependencies": {
+			"minUI5Version": "1.52.16",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.perezjquim.showcase.i18n.i18n"
+				}
+			},
+			"prompt": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/prompt.json"
+			},
+			"navigation": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/navigation.json"
+			}
+		},
+		"resources": {},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"controlId": "app",
+				"viewPath": "com.perezjquim.showcase.view",
+				"controlAggregation": "pages"
+			},
+			"routes": [{
+				"name": "Home",
+				"pattern": "",
+				"target": [
+					"Home"
+				]
+			}],
+			"targets": {
+				"Home": {
+					"viewType": "XML",
+					"transition": "slide",
+					"controlAggregation": "pages",
+					"viewName": "Home"
+				}
+			}
+		}
+	}
+}

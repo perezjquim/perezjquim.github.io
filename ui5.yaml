@@ -1,0 +1,10 @@
+specVersion: '2.4'
+metadata:
+  name: perezjquim-showcase-page
+type: application
+builder:
+  customTasks:
+  - name: ui5-task-cachebuster-indexing
+    afterTask: generateCachebusterInfo
+    configuration:
+      debug: true

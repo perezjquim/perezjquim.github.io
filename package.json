@@ -1,0 +1,28 @@
+{
+  "name": "perezjquim-showcase-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "ui5 build -a --clean-dest --dest=docs --include-task=generateCachebusterInfo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perezjquim/perezjquim-showcase-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perezjquim/perezjquim-showcase-page/issues"
+  },
+  "homepage": "https://github.com/perezjquim/perezjquim-showcase-page#readme",
+  "ui5": {
+    "dependencies": [
+      "ui5-task-cachebuster-indexing"
+    ]
+  },
+  "dependencies": {
+    "ui5-task-cachebuster-indexing": "^1.0.2"
+  }
+}

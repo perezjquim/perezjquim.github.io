@@ -22,9 +22,15 @@
 			"sap-ushell-plugin-type": "RendererExtensions",
 			"enabled": true
 		},
-		"ShellHeaderIconTweaker": {
+		"ShellHeaderIconTweakerPlugin": {
 			"component": "com.perezjquim.showcase.plugins.shell_header_icon_tweaker",
 			"url": "./plugins/shell_header_icon_tweaker",
+			"sap-ushell-plugin-type": "RendererExtensions",
+			"enabled": true
+		},
+		"SeasonModePlugin": {
+			"component": "com.perezjquim.showcase.plugins.season_mode",
+			"url": "./plugins/season_mode",
 			"sap-ushell-plugin-type": "RendererExtensions",
 			"enabled": true
 		}

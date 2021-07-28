@@ -1,0 +1,56 @@
+.z_winter .sapUshellShellCanvas
+{
+	background: linear-gradient( rgba( 255,255,255,.5 ), rgba( 255,255,255,.5 ) ), url('../images/winter.gif');
+}
+.z_winter .sapUshellShellHeader
+{
+	background: linear-gradient( rgba( 0,0,0, .5 ), rgba( 0,0,0,.5 ) ), url(../images/winter_header.jpg);
+}
+
+.z_spring .sapUshellShellCanvas
+{
+	background: linear-gradient( rgba( 255,255,255,.5 ), rgba( 255,255,255,.5 ) ), url('../images/spring.gif');
+}
+.z_spring .sapUshellShellHeader
+{
+	background: linear-gradient( rgba( 0,0,0, .5 ), rgba( 0,0,0,.5 ) ), url(../images/spring_header.jpg);
+}
+
+.z_summer .sapUshellShellCanvas
+{
+	background: linear-gradient( rgba( 255,255,255,.5 ), rgba( 255,255,255,.5 ) ), url('../images/summer.gif');
+}
+.z_summer .sapUshellShellHeader
+{
+	background: linear-gradient( rgba( 0,0,0, .5 ), rgba( 0,0,0,.5 ) ), url(../images/summer_header.jpg);
+}
+
+.z_autumn .sapUshellShellCanvas
+{
+	background: linear-gradient( rgba( 255,255,255,.5 ), rgba( 255,255,255,.5 ) ), url('../images/autumn.gif');
+}
+.z_autumn .sapUshellShellHeader
+{
+	background: linear-gradient( rgba( 0,0,0, .5 ), rgba( 0,0,0,.5 ) ), url(../images/autumn_header.jpg);
+}
+
+
+.z_winter .sapUshellShellCanvas
+.z_spring .sapUshellShellCanvas,
+.z_summer .sapUshellShellCanvas
+.z_autumn .sapUshellShellCanvas,
+.z_winter .sapUshellShellHeader,
+.z_spring .sapUshellShellHeader,
+.z_summer .sapUshellShellHeader,
+.z_autumn .sapUshellShellHeader
+{
+	background-size: cover;
+}
+
+.z_winter .sapUshellShellHeader,
+.z_spring .sapUshellShellHeader,
+.z_summer .sapUshellShellHeader,
+.z_autumn .sapUshellShellHeader
+{
+   	background-position: bottom;
+}

@@ -36,7 +36,7 @@
 				}
 			}
 		},
-		"componentName": "com.perezjquim.showcase.plugins.github",
+		"componentName": "com.perezjquim.showcase.plugins.linkedin",
 		"resources": {
 			"css": [{
 				"uri": "css/extra.css"

@@ -1,9 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/Component"
 ], function(Component) {
-
 	return Component.extend("com.perezjquim.showcase.plugins.shell_header_icon_tweaker.Component", {
-
 		metadata: {
 			"manifest": "json"
 		},
@@ -11,7 +9,7 @@ sap.ui.define([
 		init: function() {
 			const rendererPromise = this._getRenderer();
 			rendererPromise.then(function(oRenderer) {
-				this._tweakHeaderIcon();
+				//
 			}.bind(this));
 		},
 
@@ -41,12 +39,6 @@ sap.ui.define([
 				}
 			}
 			return oDeferred.promise();
-		},
-
-		_tweakHeaderIcon: function() {
-			const oShellHeaderIcon = $("#shell-header-icon");
-			oShellHeaderIcon.attr('src', 'assets/images/icon.jpeg');
 		}
-
 	});
 });

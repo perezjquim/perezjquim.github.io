@@ -38,14 +38,11 @@
 		},
 		"componentName": "com.perezjquim.showcase.plugins.github",
 		"resources": {
-			"css": []
+			"css": [{
+				"uri": "css/extra.css"
+			}]
 		},
-		"models": {
-			"i18n": {
-				"type": "sap.ui.model.resource.ResourceModel",
-				"uri": "i18n/i18n.properties"
-			}
-		}
+		"models": {}
 	},
 	"sap.flp": {
 		"type": "plugin",

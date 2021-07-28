@@ -1,0 +1,7 @@
+<mvc:View 
+    controllerName="com.perezjquim.showcase.generic_readme.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+        <App 
+        	id="app"/>
+</mvc:View>

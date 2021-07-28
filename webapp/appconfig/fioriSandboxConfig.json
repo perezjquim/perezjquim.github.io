@@ -10,9 +10,15 @@
 		}
 	},
 	"bootstrapPlugins": {
-		"GithubPlugin": {
+		"GitHubPlugin": {
 			"component": "com.perezjquim.showcase.plugins.github",
 			"url": "./plugins/github",
+			"sap-ushell-plugin-type": "RendererExtensions",
+			"enabled": true
+		},
+		"LinkedInPlugin": {
+			"component": "com.perezjquim.showcase.plugins.linkedin",
+			"url": "./plugins/linkedin",
 			"sap-ushell-plugin-type": "RendererExtensions",
 			"enabled": true
 		},

@@ -2,7 +2,7 @@
 	"name": "YTC",
 	"short_name": "YTC",
 	"icons": [{
-		"src": "images/icon.jpeg",
+		"src": "assets/images/icon.jpeg",
 		"sizes": "144x144",
 		"type": "image/jpeg"
 	}],

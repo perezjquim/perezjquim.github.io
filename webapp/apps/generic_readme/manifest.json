@@ -17,14 +17,7 @@
 	},
 	"sap.ui": {
 		"technology": "UI5",
-		"icons": {
-			"icon": "images/icon.png",
-			"favIcon": "images/icon.png",
-			"phone": "images/icon.png",
-			"phone@2": "images/icon.png",
-			"tablet": "images/icon.png",
-			"tablet@2": "images/icon.png"
-		},
+		"icons": {},
 		"deviceTypes": {
 			"desktop": true,
 			"tablet": true,

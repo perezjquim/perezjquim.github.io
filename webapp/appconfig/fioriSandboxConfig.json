@@ -9,6 +9,20 @@
 			}
 		}
 	},
+	"bootstrapPlugins": {
+		"GithubPlugin": {
+			"component": "com.perezjquim.showcase.plugins.github",
+			"url": "./plugins/github",
+			"sap-ushell-plugin-type": "RendererExtensions",
+			"enabled": true
+		},
+		"ShellHeaderIconTweaker": {
+			"component": "com.perezjquim.showcase.plugins.shell_header_icon_tweaker",
+			"url": "./plugins/shell_header_icon_tweaker",
+			"sap-ushell-plugin-type": "RendererExtensions",
+			"enabled": true
+		}
+	},
 	"services": {
 		"ClientSideTargetResolution": {
 			"adapter": {

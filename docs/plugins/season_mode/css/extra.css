@@ -1,2 +1,90 @@
-@import url("themes.css");
-@import url("message.css");
+/* > SEASON THEMES */
+:root {
+  --z_canvas_gradient: linear-gradient( rgba( 255,255,255,.5 ), rgba( 255,255,255,.5 ) );
+  --z_header_gradient: linear-gradient( rgba( 0,0,0, .5 ), rgba( 0,0,0,.5 ) );
+}
+
+.z_winter .sapUshellShellCanvas
+{
+	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/winter.gif');
+}
+.z_winter .sapUshellShellHeader
+{
+	background: var(--z_header_gradient), url(/plugins/season_mode/images/winter_header.jpg);
+}
+.z_spring .sapUshellShellCanvas
+{
+	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/spring.gif');
+}
+.z_spring .sapUshellShellHeader
+{
+	background:  var(--z_header_gradient), url(/plugins/season_mode/images/spring_header.jpg);
+}
+.z_summer .sapUshellShellCanvas
+{
+	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/summer.gif');
+}
+.z_summer .sapUshellShellHeader
+{
+	background:  var(--z_header_gradient), url(/plugins/season_mode/images/summer_header.jpg);
+}
+.z_autumn .sapUshellShellCanvas
+{
+	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/autumn.gif');
+}
+.z_autumn .sapUshellShellHeader
+{
+	background:  var(--z_header_gradient), url(/plugins/season_mode/images/autumn_header.jpg);
+}
+
+.z_winter .sapUshellShellCanvas,
+.z_spring .sapUshellShellCanvas,
+.z_summer .sapUshellShellCanvas,
+.z_autumn .sapUshellShellCanvas,
+.z_winter .sapUshellShellHeader,
+.z_spring .sapUshellShellHeader,
+.z_summer .sapUshellShellHeader,
+.z_autumn .sapUshellShellHeader
+{
+	background-size: cover;
+}
+
+.z_winter .sapUshellShellHeader,
+.z_spring .sapUshellShellHeader,
+.z_summer .sapUshellShellHeader,
+.z_autumn .sapUshellShellHeader
+{
+   	background-position: bottom;
+}
+/* < SEASON THEMES */
+
+/* > SEASON MESSAGE */
+:root {
+  --z_season_message_text: 'A season-specific CSS theme has been applied, fitting accordingly to the current season :)';
+}
+
+z_season_message
+{
+	background-repeat: repeat;
+	background-attachment: scroll;
+	position: absolute;
+	left: 0;
+	bottom: 10vh;
+	animation: z_season_message_animation 10s linear;
+	animation-fill-mode: forwards;
+	width: 100vw;
+	opacity: 0.5;
+	background-color: white;
+	text-align: center;
+	font-style: italic;
+}
+z_season_message::before
+{
+	content: var(--z_season_message_text);
+}
+@keyframes z_season_message_animation
+{
+	0% { left: 100vw; }
+	100% { left: -100vw; }
+}
+/* < SEASON MESSAGE */

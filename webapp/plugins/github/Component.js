@@ -2,6 +2,9 @@ sap.ui.define([
 	"sap/ui/core/Component"
 ], function(Component) {
 	return Component.extend("com.perezjquim.showcase.plugins.github.Component", {
+		BUTTON_ID: "github-icon",
+		BUTTON_TARGET_URL: "https://github.com/perezjquim",
+
 		metadata: {
 			"manifest": "json"
 		},
@@ -40,9 +43,6 @@ sap.ui.define([
 			}
 			return oDeferred.promise();
 		},
-
-		BUTTON_ID: "github-icon",
-		BUTTON_TARGET_URL: "https://github.com/perezjquim",
 
 		_renderButton: function(oRenderer) {
 			oRenderer.addHeaderEndItem("sap.ushell.ui.shell.ShellHeadItem", {

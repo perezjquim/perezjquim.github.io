@@ -1,0 +1,28 @@
+:root {
+  --z_season_message_text: 'A season-specific CSS theme has been applied, fitting accordingly to the current season :)';
+}
+
+z_season_message
+{
+	background-repeat: repeat;
+	background-attachment: scroll;
+	position: absolute;
+	left: 0;
+	bottom: 10vh;
+	animation: z_season_message_animation 10s linear;
+	animation-fill-mode: forwards;
+	width: 100vw;
+	opacity: 0.5;
+	background-color: white;
+	text-align: center;
+	font-style: italic;
+}
+z_season_message::before
+{
+	content: var(--z_season_message_text);
+}
+@keyframes z_season_message_animation
+{
+	0% { left: 100vw; }
+	100% { left: -100vw; }
+}

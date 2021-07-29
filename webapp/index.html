@@ -13,21 +13,7 @@
         <meta name="msapplication-TileColor" content="#4392F1">
         <meta name="theme-color" content="#4392F1">
         <title>PEREZJQUIM</title>
-        <script 
-            src="https://sapui5.hana.ondemand.com/test-resources/sap/ushell/bootstrap/sandbox.js" 
-            id="sap-ushell-bootstrap"
-        ></script>
-        <script 
-            src="https://sapui5.hana.ondemand.com/resources/sap-ui-cachebuster/sap-ui-core.js" 
-            id="sap-ui-bootstrap"
-            data-sap-ui-theme="sap_fiori_3"
-            data-sap-ui-compatVersion="edge"
-            data-sap-ui-frameOptions='allow'
-            data-sap-ui-xx-bindingSyntax="complex"
-            data-sap-ui-async="true" 
-            data-sap-ui-resourceroots='{"SmartTableTest": "./apps/SmartTableTest"}'
-            data-sap-ui-appCacheBuster="./">
-        </script>
+        <script src="assets/js/SWHelper.js"></script>
         <script>
             const fnOldOpen = XMLHttpRequest.prototype.open;
             const sCachebusterURL = "sap-ui-cachebuster-info.json";
@@ -44,7 +30,21 @@
                         this.setRequestHeader("Pragma", "no-cache");
                     }
                 }
-            };        	
+            };          
+        </script>        
+        <script 
+            src="https://sapui5.hana.ondemand.com/test-resources/sap/ushell/bootstrap/sandbox.js" 
+            id="sap-ushell-bootstrap"
+        ></script>
+        <script 
+            src="https://sapui5.hana.ondemand.com/resources/sap-ui-cachebuster/sap-ui-core.js" 
+            id="sap-ui-bootstrap"
+            data-sap-ui-theme="sap_fiori_3"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-frameOptions='allow'
+            data-sap-ui-xx-bindingSyntax="complex"
+            data-sap-ui-async="true"
+            data-sap-ui-appCacheBuster="./">
         </script>
         <script>
             sap.ui.getCore().attachInit(function() {

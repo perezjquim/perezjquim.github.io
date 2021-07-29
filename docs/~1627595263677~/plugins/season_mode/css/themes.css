@@ -5,35 +5,35 @@
 
 .z_winter .sapUshellShellCanvas
 {
-	background: var(--z_canvas_gradient), url('/assets/images/winter.gif');
+	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/winter.gif');
 }
 .z_winter .sapUshellShellHeader
 {
-	background: var(--z_header_gradient), url(/assets/images/winter_header.jpg);
+	background: var(--z_header_gradient), url(/plugins/season_mode/images/winter_header.jpg);
 }
 .z_spring .sapUshellShellCanvas
 {
-	background: var(--z_canvas_gradient), url('/assets/images/spring.gif');
+	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/spring.gif');
 }
 .z_spring .sapUshellShellHeader
 {
-	background:  var(--z_header_gradient), url(/assets/images/spring_header.jpg);
+	background:  var(--z_header_gradient), url(/plugins/season_mode/images/spring_header.jpg);
 }
 .z_summer .sapUshellShellCanvas
 {
-	background: var(--z_canvas_gradient), url('/assets/images/summer.gif');
+	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/summer.gif');
 }
 .z_summer .sapUshellShellHeader
 {
-	background:  var(--z_header_gradient), url(/assets/images/summer_header.jpg);
+	background:  var(--z_header_gradient), url(/plugins/season_mode/images/summer_header.jpg);
 }
 .z_autumn .sapUshellShellCanvas
 {
-	background: var(--z_canvas_gradient), url('/assets/images/autumn.gif');
+	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/autumn.gif');
 }
 .z_autumn .sapUshellShellHeader
 {
-	background:  var(--z_header_gradient), url(/assets/images/autumn_header.jpg);
+	background:  var(--z_header_gradient), url(/plugins/season_mode/images/autumn_header.jpg);
 }
 
 .z_winter .sapUshellShellCanvas,

@@ -35,9 +35,9 @@
 }
 
 
-.z_winter .sapUshellShellCanvas
+.z_winter .sapUshellShellCanvas,
 .z_spring .sapUshellShellCanvas,
-.z_summer .sapUshellShellCanvas
+.z_summer .sapUshellShellCanvas,
 .z_autumn .sapUshellShellCanvas,
 .z_winter .sapUshellShellHeader,
 .z_spring .sapUshellShellHeader,

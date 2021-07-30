@@ -36,9 +36,18 @@
             data-sap-ui-preload="async">
         </script>
         <script>
-            sap.ui.getCore().attachInit(function() {
-            	sap.ushell.Container.createRenderer().placeAt("content");
-            });
+            (function()
+            {
+                setTimeout(function()
+                {
+                    sap.ui.getCore().attachInit(function() {
+                        setTimeout(function()
+                        {                        
+    	                   sap.ushell.Container.createRenderer().placeAt("content");
+                       });
+                    });
+                });
+            })();
         </script>
     </head>
     <body class="sapUiBody" role="application">

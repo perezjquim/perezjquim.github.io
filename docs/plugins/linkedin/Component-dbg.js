@@ -49,8 +49,12 @@ sap.ui.define([
 			oRenderer.addHeaderEndItem("sap.ushell.ui.shell.ShellHeadItem", {
 				id: this.BUTTON_ID,
 				text: this.BUTTON_TEXT,
-				target: this.BUTTON_TARGET_URL
+				press: this._onPress.bind(this)
 			}, true, false);
+		},
+
+		_onPress: function(oEvent) {
+			window.open(this.BUTTON_TARGET_URL);
 		}
 	});
 });

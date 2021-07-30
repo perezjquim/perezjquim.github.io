@@ -2,7 +2,7 @@
 	"_version": "1.5.0",
 	"sap.app": {
 		"_version": "1.2.0",
-		"id": "com.perezjquim.showcase.plugins.shell_header_icon_tweaker",
+		"id": "com.perezjquim.showcase.plugins.github",
 		"type": "component",
 		"applicationVersion": {
 			"version": ""
@@ -25,18 +25,8 @@
 			"compact": true,
 			"cozy": false
 		},
-		"dependencies": {
-			"minUI5Version": "1.38.1",
-			"libs": {
-				"sap.ui.core": {
-					"minVersion": "1.38.1"
-				},
-				"sap.m": {
-					"minVersion": "1.38.1"
-				}
-			}
-		},
-		"componentName": "com.perezjquim.showcase.plugins.github",
+		"dependencies": {},
+		"componentName": "com.perezjquim.showcase.plugins.linkedin",
 		"resources": {
 			"css": [{
 				"uri": "css/extra.css"

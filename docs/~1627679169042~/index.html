@@ -13,28 +13,15 @@
         <meta name="msapplication-TileColor" content="#4392F1">
         <meta name="theme-color" content="#4392F1">
         <title>PEREZJQUIM</title>
-        <script src="assets/js/SWHelper.js"></script>
-        <script>
-            const fnOldOpen = XMLHttpRequest.prototype.open;
-            const sCachebusterURL = "sap-ui-cachebuster-info.json";
-
-            XMLHttpRequest.prototype.open = function() {
-                if (fnOldOpen) {
-                    fnOldOpen.apply(this, arguments);
-                }
-                const sUrl = arguments && arguments[1];
-                if (sUrl) {
-                    if (sUrl.includes(sCachebusterURL)) {
-                        this.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
-                        this.setRequestHeader("Expires", "Tue, 01 Jan 1980 1:00:00 GMT");
-                        this.setRequestHeader("Pragma", "no-cache");
-                    }
-                }
-            };          
-        </script>        
+        <script src="assets/js/URLHelper.js"></script>
+        <script src="assets/js/CachebusterHelper.js"></script>
+        <script src="assets/js/SWHelper.js"></script> 
         <script 
             src="https://sapui5.hana.ondemand.com/test-resources/sap/ushell/bootstrap/sandbox.js" 
             id="sap-ushell-bootstrap"
+            data-sap-ui-async="true"
+            data-sap-ui-preload="async"
+            data-sap-ui-libs="sap.m, sap.ushell, sap.fiori, sap.ui.core, sap.ui.layout"             
         ></script>
         <script 
             src="https://sapui5.hana.ondemand.com/resources/sap-ui-cachebuster/sap-ui-core.js" 
@@ -44,11 +31,13 @@
             data-sap-ui-frameOptions='allow'
             data-sap-ui-xx-bindingSyntax="complex"
             data-sap-ui-async="true"
-            data-sap-ui-appCacheBuster="./">
+            data-sap-ui-appCacheBuster="./"
+            data-sap-ui-libs="sap.m, sap.ushell, sap.fiori, sap.ui.core, sap.ui.layout"             
+            data-sap-ui-preload="async">
         </script>
         <script>
             sap.ui.getCore().attachInit(function() {
-            	sap.ushell.Container.createRenderer("fiori2").placeAt("content");
+            	sap.ushell.Container.createRenderer().placeAt("content");
             });
         </script>
     </head>

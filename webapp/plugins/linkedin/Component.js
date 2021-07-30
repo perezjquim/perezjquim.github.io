@@ -3,6 +3,7 @@ sap.ui.define([
 ], function(Component) {
 	return Component.extend("com.perezjquim.showcase.plugins.linkedin.Component", {
 		BUTTON_ID: "linkedin-icon",
+		BUTTON_TEXT: "LinkedIn",
 		BUTTON_TARGET_URL: "https://www.linkedin.com/in/perezjquim",
 
 		metadata: {
@@ -47,6 +48,7 @@ sap.ui.define([
 		_renderButton: function(oRenderer) {
 			oRenderer.addHeaderEndItem("sap.ushell.ui.shell.ShellHeadItem", {
 				id: this.BUTTON_ID,
+				text: this.BUTTON_TEXT,
 				target: this.BUTTON_TARGET_URL
 			}, true, false);
 		}

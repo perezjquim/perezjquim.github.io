@@ -11,7 +11,7 @@ sap.ui.define([
 		},
 		setBusy: function(bBusy) {
 			if (bBusy) {
-				BusyIndicator.show(0);
+				BusyIndicator.show();
 			} else {
 				BusyIndicator.hide();
 			}

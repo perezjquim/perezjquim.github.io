@@ -4,7 +4,8 @@
 		"fiori2": {
 			"componentData": {
 				"config": {
-					"search": "hidden"
+					"search": "hidden",
+					"searchBusinessObjects": "hidden"
 				}
 			}
 		}

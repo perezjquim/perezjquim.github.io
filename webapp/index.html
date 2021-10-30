@@ -41,10 +41,10 @@
                 setTimeout(function()
                 {
                     sap.ui.getCore().attachInit(function() {
-                        setTimeout(function()
+                        setTimeout(async function()
                         {                        
-    	                   sap.ushell.Container.createRenderer().placeAt("content");
-                       });
+    	                   ( await sap.ushell.Container.createRenderer("fiori2", true) ).placeAt("content");
+                        });
                     });
                 });
             })();

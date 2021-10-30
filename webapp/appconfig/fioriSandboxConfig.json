@@ -23,6 +23,12 @@
 			"sap-ushell-plugin-type": "RendererExtensions",
 			"enabled": true
 		},
+		"SpotifyPlugin": {
+			"component": "com.perezjquim.showcase.plugins.spotify",
+			"url": "./plugins/spotify",
+			"sap-ushell-plugin-type": "RendererExtensions",
+			"enabled": true
+		},
 		"ShellHeaderIconTweakerPlugin": {
 			"component": "com.perezjquim.showcase.plugins.shell_header_icon_tweaker",
 			"url": "./plugins/shell_header_icon_tweaker",

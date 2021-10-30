@@ -1,0 +1,4 @@
+#spotify-icon > span
+{
+	content: url("/plugins/spotify/images/icon.png");
+}

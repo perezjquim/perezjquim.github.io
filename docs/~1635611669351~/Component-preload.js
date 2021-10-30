@@ -22,7 +22,7 @@ jQuery.sap.registerPreloadedModules({
 },
 	"com/perezjquim/showcase/assets/js/SWHelper.js":function(){(function(){const e={run:function(){this._cleanup();this._registerSW();window.addEventListener("beforeunload",this._cleanup.bind(this))},_registerSW:function(){if(navigator.serviceWorker){navigator.serviceWorker.register("/sw.js")}},_cleanup:function(){if(navigator.serviceWorker){navigator.serviceWorker.getRegistrations().then(function(e){for(let r of e){r.unregister()}})}}};e.run()})();
 },
-	"com/perezjquim/showcase/assets/js/URLHelper.js":function(){(function(){const n={run:function(){this._adjustSearchParams()},_adjustSearchParams:function(){window["sap-ushell-config"]={};if(!document.location.href.includes("sap-ushell-sandbox-config")){const n=new URLSearchParams(window.location.search);n.set("sap-ushell-sandbox-config","/appconfig/fioriSandboxConfig");window.location.search=n}}};n.run()})();
+	"com/perezjquim/showcase/assets/js/URLHelper.js":function(){(function(){const n={run:function(){this._adjustSearchParams()},_adjustSearchParams:function(){window["sap-ushell-config"]={};if(window.URLSearchParams&&!document.location.href.includes("sap-ushell-sandbox-config")){const n=new URLSearchParams(window.location.search);n.set("sap-ushell-sandbox-config","/appconfig/fioriSandboxConfig");window.location.search=n}}};n.run()})();
 },
 	"com/perezjquim/showcase/manifest.json":'{"_version":"1.12.0","sap.app":{"id":"com.perezjquim.showcase","type":"application","dataSources":{}},"sap.ui":{},"sap.ui5":{}}',
 	"com/perezjquim/showcase/plugins/github/Component-preload.js":function(){

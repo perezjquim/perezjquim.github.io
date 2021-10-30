@@ -1,5 +1,5 @@
 (function() {
-    const oCore = {
+    var oCore = {
         run: function() {
             this._cleanup();
             this._registerSW();

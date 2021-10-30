@@ -14,9 +14,9 @@ sap.ui.define([
 			UIComponent.prototype.init.apply(this, arguments);
 			this.getRouter().initialize();
 
-			const oComponentData = this.getComponentData();
-			const oStartupParameters = oComponentData.startupParameters;
-			const oStartupModel = this.getModel("startup");
+			var oComponentData = this.getComponentData();
+			var oStartupParameters = oComponentData.startupParameters;
+			var oStartupModel = this.getModel("startup");
 			oStartupModel.setData(oStartupParameters);
 		}
 

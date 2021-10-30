@@ -1,1 +1,0 @@
-(function(){const n={run:function(){this._adjustSearchParams()},_adjustSearchParams:function(){window["sap-ushell-config"]={};if(window.URLSearchParams&&!document.location.href.includes("sap-ushell-sandbox-config")){const n=new URLSearchParams(window.location.search);n.set("sap-ushell-sandbox-config","/appconfig/fioriSandboxConfig");window.location.search=n}}};n.run()})();

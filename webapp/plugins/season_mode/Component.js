@@ -7,7 +7,7 @@ sap.ui.define([
 		},
 
 		init: function() {
-			const rendererPromise = this._getRenderer();
+			var rendererPromise = this._getRenderer();
 			rendererPromise.then(function(oRenderer) {
 				this._renderSeason();
 			}.bind(this));
@@ -42,8 +42,8 @@ sap.ui.define([
 		},
 
 		_renderSeason: function() {
-			const oCurrentDate = new Date();
-			const iCurrentMonth = oCurrentDate.getMonth() + 1;
+			var oCurrentDate = new Date();
+			var iCurrentMonth = oCurrentDate.getMonth() + 1;
 
 			var sClass = "";
 			switch (iCurrentMonth) {

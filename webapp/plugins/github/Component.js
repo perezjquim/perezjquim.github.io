@@ -11,7 +11,7 @@ sap.ui.define([
 		},
 
 		init: function() {
-			const rendererPromise = this._getRenderer();
+			var rendererPromise = this._getRenderer();
 			rendererPromise.then(function(oRenderer) {
 				this._renderButton(oRenderer);
 			}.bind(this));

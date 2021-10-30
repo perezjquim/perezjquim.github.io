@@ -1,17 +1,17 @@
 (function() {
-	const oCore = {
+	var oCore = {
 		run: function() {
 			this._adjustCache();
 		},
 		_adjustCache: function() {
-			const fnOldOpen = XMLHttpRequest.prototype.open;
-			const sCachebusterURL = "sap-ui-cachebuster-info.json";
+			var fnOldOpen = XMLHttpRequest.prototype.open;
+			var sCachebusterURL = "sap-ui-cachebuster-info.json";
 
 			XMLHttpRequest.prototype.open = function() {
 				if (fnOldOpen) {
 					fnOldOpen.apply(this, arguments);
 				}
-				const sUrl = arguments && arguments[1];
+				var sUrl = arguments && arguments[1];
 				if (sUrl) {
 					if (sUrl.includes(sCachebusterURL)) {
 						this.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");

@@ -10,13 +10,13 @@ sap.ui.define([
 			this.setBusy(true);
 
 			setTimeout(function() {
-				const oEmbed = this.byId("embed-repo");
-				const oStartupModel = this.getModel("startup");
-				const sRepoLabel = oStartupModel.getProperty("/repo_label")[0];
-				const sRepoName = oStartupModel.getProperty("/repo_name")[0];
-				oEmbed.setContent(`<embed src='https://perezjquim.github.io/${sRepoName}' width='100%' height='100%'/>`);
+				var oEmbed = this.byId("embed-repo");
+				var oStartupModel = this.getModel("startup");
+				var sRepoLabel = oStartupModel.getProperty("/repo_label")[0];
+				var sRepoName = oStartupModel.getProperty("/repo_name")[0];
+				oEmbed.setContent("<embed src='https://perezjquim.github.io/" + sRepoName + "''" + " " + "width='100%' height='100%'/>");
 
-				const oComponent = this.getOwnerComponent();
+				var oComponent = this.getOwnerComponent();
 				oComponent.getService("ShellUIService").then(
 					function(oService) {
 						oService.setTitle(sRepoLabel);

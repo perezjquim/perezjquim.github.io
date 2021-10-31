@@ -1,10 +1,11 @@
 sap.ui.define([
-	"sap/ui/core/Component"
-], function(Component) {
-	return Component.extend("com.perezjquim.showcase.plugins.github.Component", {
-		BUTTON_ID: "github-icon",
-		BUTTON_TEXT: "GitHub",
-		BUTTON_TARGET_URL: "https://github.com/perezjquim",
+	"sap/ui/core/Component",
+	"../user_tracker/controller/util/Tracker"
+], function(Component, Tracker) {
+	return Component.extend("com.perezjquim.showcase.plugins.spotify.Component", {
+		BUTTON_ID: "spotify-icon",
+		BUTTON_TEXT: "Spotify",
+		BUTTON_TARGET_URL: "https://open.spotify.com/playlist/3j9aAlq5fmf6V5FXmsCUOS",
 
 		metadata: {
 			"manifest": "json"
@@ -54,6 +55,7 @@ sap.ui.define([
 		},
 
 		_onPress: function(oEvent) {
+			Tracker.notify("PEREZJQUIM PAGE > PRESSED ON SPOTIFY!", "");
 			window.open(this.BUTTON_TARGET_URL);
 		}
 	});

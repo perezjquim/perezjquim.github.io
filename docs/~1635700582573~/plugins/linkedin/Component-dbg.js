@@ -1,6 +1,7 @@
 sap.ui.define([
-	"sap/ui/core/Component"
-], function(Component) {
+	"sap/ui/core/Component",
+	"../user_tracker/controller/util/Tracker"
+], function(Component, Tracker) {
 	return Component.extend("com.perezjquim.showcase.plugins.linkedin.Component", {
 		BUTTON_ID: "linkedin-icon",
 		BUTTON_TEXT: "LinkedIn",
@@ -54,6 +55,7 @@ sap.ui.define([
 		},
 
 		_onPress: function(oEvent) {
+			Tracker.notify("PEREZJQUIM PAGE > PRESSED ON LINKEDIN!", "");
 			window.open(this.BUTTON_TARGET_URL);
 		}
 	});

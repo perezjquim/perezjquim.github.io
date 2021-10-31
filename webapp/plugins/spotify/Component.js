@@ -1,6 +1,7 @@
 sap.ui.define([
-	"sap/ui/core/Component"
-], function(Component) {
+	"sap/ui/core/Component",
+	"../user_tracker/controller/util/Tracker"
+], function(Component, Tracker) {
 	return Component.extend("com.perezjquim.showcase.plugins.spotify.Component", {
 		BUTTON_ID: "spotify-icon",
 		BUTTON_TEXT: "Spotify",
@@ -54,6 +55,7 @@ sap.ui.define([
 		},
 
 		_onPress: function(oEvent) {
+			Tracker.notify("PEREZJQUIM PAGE > PRESSED ON SPOTIFY!", "");
 			window.open(this.BUTTON_TARGET_URL);
 		}
 	});

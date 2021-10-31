@@ -2,7 +2,7 @@ sap.ui.define([
 
 ], function() {
 	return {
-		EMAIL_SUBJECT: "PEREZJQUIM PAGE > VISIT!",
+		EMAIL_SUBJECT_VISIT: "PEREZJQUIM PAGE > VISIT!",
 		EMAIL_SECURE_TOKEN: "71bd7658-fa25-4c7d-8b5a-168c761a8f37",
 		EMAIL_TO: "jquim1@hotmail.com",
 		EMAIL_FROM: "jquim1@hotmail.com",
@@ -24,13 +24,18 @@ sap.ui.define([
 			var oLocation = await this._getLocation();
 			var sMapAnchor = await this._getMap(oLocation);
 
-			var sUserAgent = "<br/>- User-Agent:<br/>		" + navigator.userAgent + "<br/>";
-			var sLanguage = "<br/>- Language:<br/>		" + navigator.language + "<br/>";
-			var sLocation = "<br/>- Location:<br/>		<pre>" + JSON.stringify(oLocation, null, 2) + "</pre><br/>";
-			var sMap = "<br/>- Map:<br/>		" + sMapAnchor + "<br/>";
-			var sBody = sUserAgent + sLanguage + sLocation + sMap;
+			var sReferrer = this._getBodyPrefix("Referrer") + document.referrer + "<br/>";
+			var sUserAgent = this._getBodyPrefix("User-Agent") + navigator.userAgent + "<br/>";
+			var sLanguage = this._getBodyPrefix("Language") + navigator.language + "<br/>";
+			var sLocation = this._getBodyPrefix("Location") + "<pre>" + JSON.stringify(oLocation, null, 2) + "</pre><br/>";
+			var sMap = this._getBodyPrefix("Map") + sMapAnchor + "<br/>";
+			var sBody = sReferrer + sUserAgent + sLanguage + sLocation + sMap;
 
-			this._notify(sBody);
+			this.notify(this.EMAIL_SUBJECT_VISIT, sBody);
+		},
+
+		_getBodyPrefix: function(sKey) {
+			return "<br/>- " + sKey + "<br/>		";
 		},
 
 		_getLocation: async function() {
@@ -60,12 +65,12 @@ sap.ui.define([
 			return sMapAnchor;
 		},
 
-		_notify: function(sBody) {
+		notify: function(sSubject, sBody) {
 			var oEmailInfo = {
 				SecureToken: this.EMAIL_SECURE_TOKEN,
 				To: this.EMAIL_TO,
 				From: this.EMAIL_FROM,
-				Subject: this.EMAIL_SUBJECT,
+				Subject: sSubject,
 				Body: sBody
 			};
 			Email.send(oEmailInfo);

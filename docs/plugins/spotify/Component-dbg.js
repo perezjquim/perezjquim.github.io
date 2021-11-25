@@ -1,11 +1,12 @@
 sap.ui.define([
 	"sap/ui/core/Component",
-	"../user_tracker/controller/util/Tracker"
-], function(Component, Tracker) {
+	"../user_tracker/controller/util/Tracker",
+	"sap/ui/core/Fragment",
+	"sap/ui/core/BusyIndicator"
+], function(Component, Tracker, Fragment, BusyIndicator) {
 	return Component.extend("com.perezjquim.showcase.plugins.spotify.Component", {
 		BUTTON_ID: "spotify-icon",
 		BUTTON_TEXT: "Spotify",
-		BUTTON_TARGET_URL: "https://open.spotify.com/playlist/3j9aAlq5fmf6V5FXmsCUOS",
 
 		metadata: {
 			"manifest": "json"
@@ -56,7 +57,33 @@ sap.ui.define([
 
 		_onPress: function(oEvent) {
 			Tracker.notify("PEREZJQUIM PAGE > PRESSED ON SPOTIFY!", "");
-			window.open(this.BUTTON_TARGET_URL);
+			this._openPlaylist(oEvent);
+		},
+
+		_openPlaylist: function(oEvent) {
+			const oSource = oEvent.getSource();
+			if (!this._oPlaylistPopover) {
+				BusyIndicator.show();
+				Fragment.load({
+					name: "com.perezjquim.showcase.plugins.spotify.fragment.EmbedPopover",
+					controller: this
+				}).then(function(oPopover) {
+					BusyIndicator.hide();
+
+					const oMiscModel = this.getModel("misc");
+					oPopover.setModel(oMiscModel, "misc");
+
+					oPopover.openBy(oSource);
+
+					this._oPlaylistPopover = oPopover;
+				}.bind(this));
+			} else {
+				if (this._oPlaylistPopover.isOpen()) {
+					this._oPlaylistPopover.close();
+				} else {
+					this._oPlaylistPopover.openBy(oSource);
+				}
+			}
 		}
 	});
 });

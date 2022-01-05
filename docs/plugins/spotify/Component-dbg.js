@@ -70,8 +70,7 @@ sap.ui.define([
 				}).then(function(oPopover) {
 					BusyIndicator.hide();
 
-					const oMiscModel = this.getModel("misc");
-					oPopover.setModel(oMiscModel, "misc");
+					this._mapModels(oPopover);
 
 					oPopover.openBy(oSource);
 
@@ -84,6 +83,40 @@ sap.ui.define([
 					this._oPlaylistPopover.openBy(oSource);
 				}
 			}
+		},
+
+		_mapModels: function(oControl) {
+			const oModels = this.oModels;
+			for (var sModelName in oModels) {
+				oControl.setModel(oModels[sModelName], sModelName);
+			}
+		},
+
+		onBeforeOpenPopover: function(oEvent) {
+			const oMiscModel = this.getModel("misc");
+			oMiscModel.setProperty("/is_iframe_busy", true);
+		},
+
+		onAfterRenderingIframe: function(oEvent) {
+			const oMiscModel = this.getModel("misc");
+
+			const oIframe = $("#z_spotify_embed_popover_iframe");
+			oIframe.one("load", function() {
+				oMiscModel.setProperty("/is_iframe_busy", false);
+			});
+		},
+
+		onClosePopover: function(oEvent) {
+			const oButton = oEvent.getSource();
+			const oFooter = oButton.getParent();
+			const oPopover = oFooter.getParent();
+			oPopover.close();
+		},
+
+		onOpenPlaylist: function(oEvent) {
+			const oMiscModel = this.getModel("misc");
+			const sPlaylistUrl = oMiscModel.getProperty("/playlist_url");
+			window.open(sPlaylistUrl);
 		}
 	});
 });

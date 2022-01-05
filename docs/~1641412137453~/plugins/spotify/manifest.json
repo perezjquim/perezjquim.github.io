@@ -36,6 +36,18 @@
 			"misc": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/misc.json"
+			},
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.perezjquim.showcase.plugins.spotify.i18n.i18n"
+				}
+			},
+			"i18n_sap": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sap.ui.core.messagebundle"
+				}
 			}
 		}
 	},

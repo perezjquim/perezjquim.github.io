@@ -102,7 +102,9 @@ sap.ui.define([
 
 			const oIframe = $("#z_spotify_embed_popover_iframe");
 			oIframe.one("load", function() {
-				oMiscModel.setProperty("/is_iframe_busy", false);
+				setTimeout(function() {
+					oMiscModel.setProperty("/is_iframe_busy", false);
+				});
 			});
 		},
 

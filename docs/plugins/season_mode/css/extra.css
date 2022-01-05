@@ -69,7 +69,8 @@ z_season_message_container
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
-	position: fixed;	
+	position: fixed;
+	pointer-events: none;
 }
 z_season_message
 {

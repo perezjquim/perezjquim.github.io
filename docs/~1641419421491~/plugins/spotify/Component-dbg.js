@@ -62,27 +62,31 @@ sap.ui.define([
 
 		_openPlaylist: function(oEvent) {
 			const oSource = oEvent.getSource();
-			if (!this._oPlaylistPopover) {
-				BusyIndicator.show();
-				Fragment.load({
-					name: "com.perezjquim.showcase.plugins.spotify.fragment.EmbedPopover",
-					controller: this
-				}).then(function(oPopover) {
-					BusyIndicator.hide();
+			setTimeout(function() {
 
-					this._mapModels(oPopover);
 
-					oPopover.openBy(oSource);
+				if (!this._oPlaylistPopover) {
+					BusyIndicator.show();
+					Fragment.load({
+						name: "com.perezjquim.showcase.plugins.spotify.fragment.EmbedPopover",
+						controller: this
+					}).then(function(oPopover) {
+						BusyIndicator.hide();
 
-					this._oPlaylistPopover = oPopover;
-				}.bind(this));
-			} else {
-				if (this._oPlaylistPopover.isOpen()) {
-					this._oPlaylistPopover.close();
+						this._mapModels(oPopover);
+
+						oPopover.openBy(oSource);
+
+						this._oPlaylistPopover = oPopover;
+					}.bind(this));
 				} else {
-					this._oPlaylistPopover.openBy(oSource);
+					if (this._oPlaylistPopover.isOpen()) {
+						this._oPlaylistPopover.close();
+					} else {
+						this._oPlaylistPopover.openBy(oSource);
+					}
 				}
-			}
+			}.bind(this));
 		},
 
 		_mapModels: function(oControl) {
@@ -102,9 +106,7 @@ sap.ui.define([
 
 			const oIframe = $("#z_spotify_embed_popover_iframe");
 			oIframe.one("load", function() {
-				setTimeout(function() {
-					oMiscModel.setProperty("/is_iframe_busy", false);
-				});
+				oMiscModel.setProperty("/is_iframe_busy", false);
 			});
 		},
 

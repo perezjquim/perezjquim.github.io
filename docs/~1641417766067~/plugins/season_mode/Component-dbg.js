@@ -73,7 +73,7 @@ sap.ui.define([
 			}
 
 			$("body").addClass(sClass);
-			$("body").append("<z_season_message/>");
+			$("body").append("<z_season_message_container><z_season_message/></z_season_message_container>");
 		}
 	});
 });

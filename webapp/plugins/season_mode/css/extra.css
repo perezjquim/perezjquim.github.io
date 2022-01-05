@@ -86,7 +86,7 @@ z_season_message
 	left: 0;
 	bottom: 10vh;
 	width: 100vw;
-	height: 10vh;
+	white-space: nowrap;
 	animation-fill-mode: forwards;
 }
 z_season_message::before

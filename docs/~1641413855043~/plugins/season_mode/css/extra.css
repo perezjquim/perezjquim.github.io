@@ -61,6 +61,7 @@
 /* > SEASON MESSAGE */
 :root {
   --z_season_message_text: 'A season-specific CSS theme has been applied, fitting accordingly to the current season :)';
+  --z_season_message_duration: 20s;
 }
 
 z_season_message
@@ -70,9 +71,9 @@ z_season_message
 	position: absolute;
 	left: 0;
 	bottom: 10vh;
-	animation: z_season_message_animation 10s linear;
+	animation: z_season_message_animation var(--z_season_message_duration) linear;
 	animation-fill-mode: forwards;
-	width: 100vw;
+	width: 200vw;
 	opacity: 0.5;
 	background-color: white;
 	text-align: center;
@@ -84,7 +85,7 @@ z_season_message::before
 }
 @keyframes z_season_message_animation
 {
-	0% { left: 100vw; }
-	100% { left: -100vw; }
+	0% { left: 200vw; }
+	100% { left: -200vw; }
 }
 /* < SEASON MESSAGE */

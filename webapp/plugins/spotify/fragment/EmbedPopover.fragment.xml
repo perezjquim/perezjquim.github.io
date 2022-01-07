@@ -13,6 +13,7 @@
 		<content>
 			<Page 					
 				busy="{misc>/is_iframe_busy}"
+				busyIndicatorDelay="0"
 				showHeader="false"
 				showFooter="false"
 				showSubHeader="false"

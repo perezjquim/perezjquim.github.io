@@ -62,31 +62,27 @@ sap.ui.define([
 
 		_openPlaylist: function(oEvent) {
 			const oSource = oEvent.getSource();
-			setTimeout(function() {
+			if (!this._oPlaylistPopover) {
+				BusyIndicator.show();
+				Fragment.load({
+					name: "com.perezjquim.showcase.plugins.spotify.fragment.EmbedPopover",
+					controller: this
+				}).then(function(oPopover) {
+					BusyIndicator.hide();
 
+					this._mapModels(oPopover);
 
-				if (!this._oPlaylistPopover) {
-					BusyIndicator.show();
-					Fragment.load({
-						name: "com.perezjquim.showcase.plugins.spotify.fragment.EmbedPopover",
-						controller: this
-					}).then(function(oPopover) {
-						BusyIndicator.hide();
+					oPopover.openBy(oSource);
 
-						this._mapModels(oPopover);
-
-						oPopover.openBy(oSource);
-
-						this._oPlaylistPopover = oPopover;
-					}.bind(this));
+					this._oPlaylistPopover = oPopover;
+				}.bind(this));
+			} else {
+				if (this._oPlaylistPopover.isOpen()) {
+					this._oPlaylistPopover.close();
 				} else {
-					if (this._oPlaylistPopover.isOpen()) {
-						this._oPlaylistPopover.close();
-					} else {
-						this._oPlaylistPopover.openBy(oSource);
-					}
+					this._oPlaylistPopover.openBy(oSource);
 				}
-			}.bind(this));
+			}
 		},
 
 		_mapModels: function(oControl) {

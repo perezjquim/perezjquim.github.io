@@ -12,61 +12,87 @@ sap.ui.define([
 		},
 
 		_includeScripts: function() {
-			var sScriptSrc = "https://smtpjs.com/v3/smtp.js";
-			var oScript = document.createElement("script");
-			oScript.src = sScriptSrc;
-			oScript.async = false;
-			oScript.addEventListener("load", this._onScriptsReady.bind(this));
-			document.head.appendChild(oScript);
+			if (!window.Email) {
+				const sScriptSrc = "https://smtpjs.com/v3/smtp.js";
+				const oScript = document.createElement("script");
+				oScript.src = sScriptSrc;
+				oScript.async = false;
+				oScript.addEventListener("load", this._onScriptsReady.bind(this));
+				document.head.appendChild(oScript);
+			} else {
+				(async function() {
+					await this._onScriptsReady.bind(this);
+				}.bind(this))();
+			}
 		},
 
 		_onScriptsReady: async function() {
-			var oLocation = await this._getLocation();
-			var sMapAnchor = await this._getMap(oLocation);
+			const oEmailData = await this._getEmailData();
 
-			var sReferrer = this._getBodyPrefix("Referrer") + document.referrer + "<br/>";
-			var sUserAgent = this._getBodyPrefix("User-Agent") + navigator.userAgent + "<br/>";
-			var sLanguage = this._getBodyPrefix("Language") + navigator.language + "<br/>";
-			var sLocation = this._getBodyPrefix("Location") + "<pre>" + JSON.stringify(oLocation, null, 2) + "</pre><br/>";
-			var sMap = this._getBodyPrefix("Map") + sMapAnchor + "<br/>";
-			var sBody = sReferrer + sUserAgent + sLanguage + sLocation + sMap;
+			var sBody = "<table><tr><th>Name</th><th>Value</th></tr>";
+
+			oEmailData.forEach(function(oRow) {
+				sBody += "<tr>" + "<td>" + oRow["name"] + "</td>" + "<td>" + oRow["value"] + "</td>" + "</tr>";
+			})
+
+			sBody += "<style>td,th { border: 1px solid gray; text-align: left; }</style>"
 
 			this.notify(this.EMAIL_SUBJECT_VISIT, sBody);
 		},
 
-		_getBodyPrefix: function(sKey) {
-			return "<br/>- " + sKey + "<br/>		";
+		_getEmailData: async function() {
+			const oLocation = await this._getLocation();
+			const sMapAnchor = await this._getMap(oLocation);
+
+			const oData = [{
+				"name": "Referrer",
+				"value": document.referrer
+			}, {
+				"name": "User-Agent",
+				"value": navigator.userAgent || JSON.stringify(navigator.userAgentData, null, 2)
+			}, {
+				"name": "Language",
+				"value": navigator.language
+			}, {
+				"name": "Location",
+				"value": "<pre>" + JSON.stringify(oLocation, null, 2) + "</pre>"
+			}, {
+				"name": "Map",
+				"value": sMapAnchor
+			}];
+
+			return oData;
 		},
 
 		_getLocation: async function() {
-			var sUrl = 'https://ipapi.co/json';
-			var oResponse = await fetch(sUrl);
-			var oJSONResponse = await oResponse.json();
+			const sUrl = 'https://ipapi.co/json';
+			const oResponse = await fetch(sUrl);
+			const oJSONResponse = await oResponse.json();
 			return oJSONResponse;
 		},
 
 		_getMap: async function(oLocation) {
-			var sPostalCode = oLocation.postal;
-			var sCity = oLocation.city;
+			const sPostalCode = oLocation.postal;
+			const sCity = oLocation.city;
 
-			var sLocationDetailUrl = "https://www.meteoblue.com/en/server/search/query3?query=" + sPostalCode + "+" + sCity;
-			var oLocationDetailResponse = await fetch(sLocationDetailUrl);
-			var oLocationDetail = await oLocationDetailResponse.json();
+			const sLocationDetailUrl = "https://www.meteoblue.com/en/server/search/query3?query=" + sPostalCode + "+" + sCity;
+			const oLocationDetailResponse = await fetch(sLocationDetailUrl);
+			const oLocationDetail = await oLocationDetailResponse.json();
 
-			var oResults = oLocationDetail.results;
-			var oResult = oResults[0];
+			const oResults = oLocationDetail.results;
+			const oResult = oResults[0];
 
-			var sLatitude = oResult.lat;
-			var sLongitude = oResult.lon;
+			const sLatitude = oResult.lat;
+			const sLongitude = oResult.lon;
 
-			var sMapLink = "https://www.google.com/maps/place/" + sPostalCode + "+" + sCity;
-			var sMapAnchor = "<a href='" + sMapLink + "'>Open in Google Maps</a>";
+			const sMapLink = "https://www.google.com/maps/place/" + sPostalCode + "+" + sCity;
+			const sMapAnchor = "<a href='" + sMapLink + "'>Open in Google Maps</a>";
 
 			return sMapAnchor;
 		},
 
 		notify: function(sSubject, sBody) {
-			var oEmailInfo = {
+			const oEmailInfo = {
 				SecureToken: this.EMAIL_SECURE_TOKEN,
 				To: this.EMAIL_TO,
 				From: this.EMAIL_FROM,

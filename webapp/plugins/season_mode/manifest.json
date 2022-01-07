@@ -32,7 +32,12 @@
 				"uri": "css/extra.css"
 			}]
 		},
-		"models": {}
+		"models": {
+			"config": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/config.json"
+			}
+		}
 	},
 	"sap.flp": {
 		"type": "plugin",

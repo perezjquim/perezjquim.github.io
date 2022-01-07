@@ -586,7 +586,13 @@
 						"title": "Miscellaneous",
 						"isVisible": true,
 						"isGroupLocked": true,
-						"tiles": []
+						"tiles": [{
+							"id": "overview",
+							"namespace": "com.perezjquim.showcase.custom_tiles.overview_tile",
+							"path": "./custom_tiles/overview_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.overview_tile"
+						}]
 					}]
 				}
 			}

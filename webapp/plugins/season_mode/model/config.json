@@ -3,16 +3,16 @@
 		"class_name": "z_new_year",
 		"months": [1]
 	}, {
-		"theme_name": "z_winter",
+		"class_name": "z_winter",
 		"months": [2, 12]
 	}, {
-		"theme_name": "z_spring",
+		"class_name": "z_spring",
 		"months": [3, 4, 5]
 	}, {
-		"theme_name": "z_summer",
+		"class_name": "z_summer",
 		"months": [6, 7, 8]
 	}, {
-		"theme_name": "z_autumn",
+		"class_name": "z_autumn",
 		"months": [9, 10, 11]
 	}]
 }

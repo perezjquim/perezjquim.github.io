@@ -27,11 +27,7 @@
 		},
 		"dependencies": {},
 		"componentName": "com.perezjquim.showcase.plugins.github",
-		"resources": {
-			"css": [{
-				"uri": "css/extra.css"
-			}]
-		},
+		"resources": {},
 		"models": {}
 	},
 	"sap.flp": {

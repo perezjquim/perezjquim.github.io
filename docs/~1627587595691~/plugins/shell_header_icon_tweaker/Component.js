@@ -1,1 +1,0 @@
-sap.ui.define(["sap/ui/core/Component"],function(e){return e.extend("com.perezjquim.showcase.plugins.shell_header_icon_tweaker.Component",{metadata:{manifest:"json"},init:function(){}})});

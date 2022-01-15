@@ -6,6 +6,13 @@ sap.ui.define([
 			"manifest": "json"
 		},
 
-		init: function() {}
+		init: function() {
+			this._replaceShellHeaderIcon();
+		},
+
+		_replaceShellHeaderIcon: function() {
+			const sNewSrc = "/assets/images/icon.jpeg";
+			$("#shell-header-icon").attr('src', sNewSrc);
+		}
 	});
 });

@@ -74,7 +74,7 @@
 :root 
 {
   --z_season_message_text: 'A season-specific CSS theme has been applied, fitting accordingly to the current season :)';
-  --z_season_message_duration: 20s;
+  --z_season_message_duration: 30s;
 }
 z_season_message_container
 {

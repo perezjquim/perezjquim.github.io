@@ -27,6 +27,10 @@ sap.ui.define([
 		},
 
 		_onScriptsReady: async function() {
+			if (!window.Tracker) {
+				window.Tracker = this;
+			}
+
 			const oEmailData = await this._getEmailData();
 
 			var sBody = "<table><tr><th>Name</th><th>Value</th></tr>";

@@ -1,7 +1,8 @@
 <mvc:View 
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc">
-	<GenericTile class="z_social_spotify" header="{config>/header}" url="{config>/target_url}" press="function(){}">
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="com.perezjquim.showcase.custom_tiles.social.spotify.controller.Tile">
+	<GenericTile class="z_social_spotify" header="{config>/header}" press="onPress">
 		<TileContent>
 			<ImageContent src="{config>/icon_src}" />
 		</TileContent>

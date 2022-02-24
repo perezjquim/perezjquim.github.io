@@ -1,5 +1,6 @@
 {
 	"header": "Spotify",
 	"target_url": "https://open.spotify.com/playlist/3j9aAlq5fmf6V5FXmsCUOS",
-	"icon_src": "https://cdn-icons-png.flaticon.com/32/49/49097.png"
+	"icon_src": "https://cdn-icons-png.flaticon.com/32/49/49097.png",
+	"notification_subject": "PEREZJQUIM PAGE > PRESSED ON SPOTIFY"
 }

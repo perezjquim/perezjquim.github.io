@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/UIComponent","sap/ui/Device"],function(t,e){"use strict";return t.extend("com.perezjquim.showcase.custom_tiles.social.github.Component",{metadata:{manifest:"json"},init:function(){t.prototype.init.apply(this,arguments)}})});

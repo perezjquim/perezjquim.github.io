@@ -1,9 +1,0 @@
-#spotify-icon > span
-{
-	content: url("/plugins/spotify/images/icon.png");
-}
-.z_spotify_embed_popover_iframe
-{
-	width: 100%;
-	height: 100%;
-}

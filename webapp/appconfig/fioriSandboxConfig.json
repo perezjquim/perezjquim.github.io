@@ -11,24 +11,6 @@
 		}
 	},
 	"bootstrapPlugins": {
-		"GitHubPlugin": {
-			"component": "com.perezjquim.showcase.plugins.github",
-			"url": "./plugins/github",
-			"sap-ushell-plugin-type": "RendererExtensions",
-			"enabled": true
-		},
-		"LinkedInPlugin": {
-			"component": "com.perezjquim.showcase.plugins.linkedin",
-			"url": "./plugins/linkedin",
-			"sap-ushell-plugin-type": "RendererExtensions",
-			"enabled": true
-		},
-		"SpotifyPlugin": {
-			"component": "com.perezjquim.showcase.plugins.spotify",
-			"url": "./plugins/spotify",
-			"sap-ushell-plugin-type": "RendererExtensions",
-			"enabled": true
-		},
 		"ShellHeaderIconTweakerPlugin": {
 			"component": "com.perezjquim.showcase.plugins.shell_header_icon_tweaker",
 			"url": "./plugins/shell_header_icon_tweaker",
@@ -320,7 +302,41 @@
 					}, {
 						"id": "ZUI5_C_MISC",
 						"title": "Miscellaneous",
-						"tiles": []
+						"tiles": [{
+							"id": "overview",
+							"namespace": "com.perezjquim.showcase.custom_tiles.overview_tile",
+							"path": "./custom_tiles/overview_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.overview_tile"
+						}]
+					}, {
+						"id": "ZUI5_C_SOCIAL",
+						"title": "Social",
+						"tiles": [{
+							"id": "social-github",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social.github",
+							"path": "./custom_tiles/social/github",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social.github"
+						}, {
+							"id": "social-linkedin",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social.linkedin",
+							"path": "./custom_tiles/social/linkedin",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social.linkedin"
+						}, {
+							"id": "social-spotify",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social.spotify",
+							"path": "./custom_tiles/social/spotify",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social.spotify"
+						}, {
+							"id": "social-instagram",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social.instagram",
+							"path": "./custom_tiles/social/instagram",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social.instagram"
+						}]
 					}],
 					"groups": [{
 						"id": "ZUI5_G_HOME",
@@ -592,6 +608,36 @@
 							"path": "./custom_tiles/overview_tile",
 							"moduleType": "UIComponent",
 							"moduleName": "com.perezjquim.showcase.custom_tiles.overview_tile"
+						}]
+					}, {
+						"id": "ZUI5_G_SOCIAL",
+						"title": "Social",
+						"isVisible": true,
+						"isGroupLocked": true,
+						"tiles": [{
+							"id": "social-github",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social.github",
+							"path": "./custom_tiles/social/github",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social.github"
+						}, {
+							"id": "social-linkedin",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social.linkedin",
+							"path": "./custom_tiles/social/linkedin",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social.linkedin"
+						}, {
+							"id": "social-spotify",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social.spotify",
+							"path": "./custom_tiles/social/spotify",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social.spotify"
+						}, {
+							"id": "social-instagram",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social.instagram",
+							"path": "./custom_tiles/social/instagram",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social.instagram"
 						}]
 					}]
 				}

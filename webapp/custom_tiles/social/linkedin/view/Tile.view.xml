@@ -1,0 +1,9 @@
+<mvc:View 
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+	<GenericTile class="z_social_linkedin" header="{config>/header}" url="{config>/target_url}" press="function(){}">
+		<TileContent>
+			<ImageContent src="{config>/icon_src}" />
+		</TileContent>
+	</GenericTile>
+</mvc:View>

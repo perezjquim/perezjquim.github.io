@@ -346,7 +346,7 @@
 						"tiles": []
 					}, {
 						"id": "ZUI5_G_SCRIPTS",
-						"title": "Scripts/Applets",
+						"title": "6 - Scripts/Applets",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -423,7 +423,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_ANDROID_APPS",
-						"title": "Android - Applications",
+						"title": "2 - Android - Applications",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -493,7 +493,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_ANDROID_LIBS",
-						"title": "Android - Libraries",
+						"title": "3 - Android - Libraries",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -544,7 +544,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_WEB_PWAS",
-						"title": "Web - PWAs",
+						"title": "4 - Web - PWAs",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -568,7 +568,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_WEB_LIBS",
-						"title": "Web - Libraries",
+						"title": "5 - Web - Libraries",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -599,7 +599,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_MISC",
-						"title": "Miscellaneous",
+						"title": "7 - Miscellaneous",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -611,7 +611,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_SOCIAL",
-						"title": "Social",
+						"title": "1 - Social",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{

@@ -29,7 +29,7 @@ sap.ui.define([
 					if (oContext) {
 						const sId = oContext.getProperty("object/id");
 						if (sId) {
-							this.notify(`CLICKED ON '${sId}'`, sBody);
+							this.notify(`PEREZJQUIM PAGE > CLICKED ON '${sId}'`, sBody);
 						}
 					}
 				}

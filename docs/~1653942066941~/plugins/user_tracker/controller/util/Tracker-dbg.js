@@ -20,11 +20,12 @@ sap.ui.define([
 
 			this.notify(this.EMAIL_SUBJECT_VISIT, sBody);
 
-			$(".sapUshellTile").click(function (oTile) {
-				const oTileControl = oTile.control(0);
+			$(".sapUshellTile").click(function (oTarget) {
+				const sTileId = oTarget.delegateTarget.id;
 
-				if (oTileControl) {
-					const oContext = oTileControl.getBindingContext();
+				const oTile = sap.ui.getCore().byId(sTileId);
+				if (oTile) {
+					const oContext = oTile.getBindingContext();
 					if (oContext) {
 						const sId = oContext.getProperty("object/id");
 						if (sId) {

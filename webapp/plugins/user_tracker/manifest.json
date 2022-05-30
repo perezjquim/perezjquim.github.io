@@ -27,7 +27,13 @@
 		},
 		"dependencies": {},
 		"componentName": "com.perezjquim.showcase.plugins.user_tracker",
-		"resources": {},
+		"resources": {
+			"js": [
+				{
+					"uri": "./static/smtp.js"
+				}
+			]
+		},
 		"models": {}
 	},
 	"sap.flp": {

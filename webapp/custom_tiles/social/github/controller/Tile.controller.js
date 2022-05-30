@@ -6,9 +6,6 @@ sap.ui.define([
 			const oSource = oEvent.getSource();
 			const oConfigModel = oSource.getModel("config");
 
-			const sNotificationSubject = oConfigModel.getProperty("/notification_subject");
-			window.Tracker.notify(sNotificationSubject, "");
-
 			const sTargetUrl = oConfigModel.getProperty("/target_url");
 			window.open(sTargetUrl);
 		}

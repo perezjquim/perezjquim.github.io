@@ -23,6 +23,7 @@
     ]
   },
   "dependencies": {
+    "@ui5/cli": "^2.14.9",
     "ui5-task-cachebuster-indexing": "^1.0.2"
   }
 }

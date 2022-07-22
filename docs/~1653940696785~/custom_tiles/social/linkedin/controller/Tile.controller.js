@@ -1,1 +1,0 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"],function(e){return e.extend("com.perezjquim.showcase.custom_tiles.social.linkedin.controller.Tile",{onPress:function(e){const o=e.getSource();const n=o.getModel("config");const t=n.getProperty("/target_url");window.open(t)}})});

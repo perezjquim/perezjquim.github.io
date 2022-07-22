@@ -1,1 +1,0 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"],function(e){return e.extend("com.perezjquim.showcase.custom_tiles.social.instagram.controller.Tile",{onPress:function(e){const o=e.getSource();const t=o.getModel("config");const n=t.getProperty("/target_url");window.open(n)}})});

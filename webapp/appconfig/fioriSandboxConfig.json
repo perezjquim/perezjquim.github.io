@@ -308,34 +308,96 @@
 							"path": "./custom_tiles/overview_tile",
 							"moduleType": "UIComponent",
 							"moduleName": "com.perezjquim.showcase.custom_tiles.overview_tile"
+						}, {
+							"id": "cv",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "Curriculum Vitae",
+								"target_url": "https://drive.google.com/file/d/1TvWsQaL3EBEbuvRGMmJJYld0jplPMwgr/view"
+							}							
 						}]
 					}, {
 						"id": "ZUI5_C_SOCIAL",
 						"title": "Social",
 						"tiles": [{
 							"id": "social-github",
-							"namespace": "com.perezjquim.showcase.custom_tiles.social.github",
-							"path": "./custom_tiles/social/github",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
 							"moduleType": "UIComponent",
-							"moduleName": "com.perezjquim.showcase.custom_tiles.social.github"
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "GitHub",
+								"target_url": "https://github.com/perezjquim",
+								"icon_src": "https://cdn-icons-png.flaticon.com/32/25/25657.png",
+								"tile_background_color": "mediumpurple"
+							}
 						}, {
 							"id": "social-linkedin",
-							"namespace": "com.perezjquim.showcase.custom_tiles.social.linkedin",
-							"path": "./custom_tiles/social/linkedin",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
 							"moduleType": "UIComponent",
-							"moduleName": "com.perezjquim.showcase.custom_tiles.social.linkedin"
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "LinkedIn",
+								"target_url": "https://www.linkedin.com/in/perezjquim",
+								"icon_src": "https://cdn-icons-png.flaticon.com/32/61/61109.png",
+								"tile_background_color": "steelblue"
+							}
 						}, {
 							"id": "social-spotify",
-							"namespace": "com.perezjquim.showcase.custom_tiles.social.spotify",
-							"path": "./custom_tiles/social/spotify",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
 							"moduleType": "UIComponent",
-							"moduleName": "com.perezjquim.showcase.custom_tiles.social.spotify"
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "Spotify",
+								"target_url": "https://open.spotify.com/playlist/3j9aAlq5fmf6V5FXmsCUOS",
+								"icon_src": "https://cdn-icons-png.flaticon.com/32/49/49097.png",
+								"tile_background_color": "seagreen"
+							}
 						}, {
 							"id": "social-instagram",
-							"namespace": "com.perezjquim.showcase.custom_tiles.social.instagram",
-							"path": "./custom_tiles/social/instagram",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
 							"moduleType": "UIComponent",
-							"moduleName": "com.perezjquim.showcase.custom_tiles.social.instagram"
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "Instagram",
+								"target_url": "https://instagram.com/quimmaisjuramaismente",
+								"icon_src": "https://cdn-icons-png.flaticon.com/32/174/174855.png",
+								"tile_background_color": "palevioletred"
+							}
+						}]
+					}, {
+						"id": "ZUI5_C_SAPCOMMUNITY",
+						"title": "SAP Community",
+						"tiles": [{
+							"id": "sapcommunity-profile",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "SAP Community Profile",
+								"target_url": "https://people.sap.com/joaquim.perez",
+								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
+								"tile_background_color": "lightskyblue"
+							}							
+						}, {
+							"id": "sapcommunity-blogposts",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "SAP Community Blog Posts",
+								"target_url": "https://people.sap.com/joaquim.perez#content:blogposts",
+								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
+								"tile_background_color": "lightskyblue"
+							}							
 						}]
 					}],
 					"groups": [{
@@ -599,7 +661,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_MISC",
-						"title": "7 - Miscellaneous",
+						"title": "0 - Greetings",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -608,36 +670,100 @@
 							"path": "./custom_tiles/overview_tile",
 							"moduleType": "UIComponent",
 							"moduleName": "com.perezjquim.showcase.custom_tiles.overview_tile"
+						}, {
+							"id": "cv",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "Curriculum Vitae",
+								"target_url": "https://drive.google.com/file/d/1TvWsQaL3EBEbuvRGMmJJYld0jplPMwgr/view"
+							}							
+						}]
+					}, {
+						"id": "ZUI5_G_SAPCOMMUNITY",
+						"title": "1 - SAP Community",
+						"isVisible": true,
+						"isGroupLocked": true,
+						"tiles": [{
+							"id": "sapcommunity-profile",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "SAP Community Profile",
+								"target_url": "https://people.sap.com/joaquim.perez",
+								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
+								"tile_background_color": "lightskyblue"
+							}							
+						}, {
+							"id": "sapcommunity-blogposts",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "SAP Community Blog Posts",
+								"target_url": "https://people.sap.com/joaquim.perez#content:blogposts",
+								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
+								"tile_background_color": "lightskyblue"
+							}							
 						}]
 					}, {
 						"id": "ZUI5_G_SOCIAL",
-						"title": "1 - Social",
+						"title": "2 - Social",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
 							"id": "social-github",
-							"namespace": "com.perezjquim.showcase.custom_tiles.social.github",
-							"path": "./custom_tiles/social/github",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
 							"moduleType": "UIComponent",
-							"moduleName": "com.perezjquim.showcase.custom_tiles.social.github"
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "GitHub",
+								"target_url": "https://github.com/perezjquim",
+								"icon_src": "https://cdn-icons-png.flaticon.com/32/25/25657.png",
+								"tile_background_color": "mediumpurple"
+							}
 						}, {
 							"id": "social-linkedin",
-							"namespace": "com.perezjquim.showcase.custom_tiles.social.linkedin",
-							"path": "./custom_tiles/social/linkedin",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
 							"moduleType": "UIComponent",
-							"moduleName": "com.perezjquim.showcase.custom_tiles.social.linkedin"
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "LinkedIn",
+								"target_url": "https://www.linkedin.com/in/perezjquim",
+								"icon_src": "https://cdn-icons-png.flaticon.com/32/61/61109.png",
+								"tile_background_color": "steelblue"
+							}
 						}, {
 							"id": "social-spotify",
-							"namespace": "com.perezjquim.showcase.custom_tiles.social.spotify",
-							"path": "./custom_tiles/social/spotify",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
 							"moduleType": "UIComponent",
-							"moduleName": "com.perezjquim.showcase.custom_tiles.social.spotify"
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "Spotify",
+								"target_url": "https://open.spotify.com/playlist/3j9aAlq5fmf6V5FXmsCUOS",
+								"icon_src": "https://cdn-icons-png.flaticon.com/32/49/49097.png",
+								"tile_background_color": "seagreen"
+							}
 						}, {
 							"id": "social-instagram",
-							"namespace": "com.perezjquim.showcase.custom_tiles.social.instagram",
-							"path": "./custom_tiles/social/instagram",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
 							"moduleType": "UIComponent",
-							"moduleName": "com.perezjquim.showcase.custom_tiles.social.instagram"
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "Instagram",
+								"target_url": "https://instagram.com/quimmaisjuramaismente",
+								"icon_src": "https://cdn-icons-png.flaticon.com/32/174/174855.png",
+								"tile_background_color": "palevioletred"
+							}
 						}]
 					}]
 				}

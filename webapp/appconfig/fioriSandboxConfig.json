@@ -408,7 +408,7 @@
 						"tiles": []
 					}, {
 						"id": "ZUI5_G_SCRIPTS",
-						"title": "6 - Scripts/Applets",
+						"title": "7 - Scripts/Applets",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -485,7 +485,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_ANDROID_APPS",
-						"title": "2 - Android - Applications",
+						"title": "3 - Android - Applications",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -555,7 +555,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_ANDROID_LIBS",
-						"title": "3 - Android - Libraries",
+						"title": "4 - Android - Libraries",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -606,7 +606,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_WEB_PWAS",
-						"title": "4 - Web - PWAs",
+						"title": "5 - Web - PWAs",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{
@@ -678,6 +678,7 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "Curriculum Vitae",
+								"icon_src": "sap-icon://work-history",
 								"target_url": "https://drive.google.com/file/d/1TvWsQaL3EBEbuvRGMmJJYld0jplPMwgr/view"
 							}							
 						}]

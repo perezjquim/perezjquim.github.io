@@ -23,6 +23,36 @@ sap.ui.define([
 
 			const sTargetUrl = oConfigModel.getProperty("/target_url");
 			window.open(sTargetUrl);
+		},
+
+		fetchCount: async function(sEndpoint, sProperty)
+		{
+			try
+			{
+				if(sEndpoint)
+				{
+					const oResponse = await fetch(sEndpoint);
+					if(oResponse.ok)
+					{
+						if(sProperty)
+						{
+							const oResponseJSON = await oResponse.json();
+							return sProperty.split('.').reduce(function(oPrev, sCurr) {
+								return oPrev ? oPrev[sCurr] : null
+							}, oResponseJSON)
+						}
+						else
+						{
+							const iValue = await oResponse.text();
+							return iValue;
+						}
+					}
+				}
+			}
+			catch(oException)
+			{
+				console.warn(oException);
+			}
 		}
 
 	});

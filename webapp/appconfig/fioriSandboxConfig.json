@@ -331,7 +331,7 @@
 							"properties": {
 								"header": "GitHub",
 								"target_url": "https://github.com/perezjquim",
-								"icon_src": "https://cdn-icons-png.flaticon.com/32/25/25657.png",
+								"icon_src": "https://cdn-icons-png.flaticon.com/64/25/25657.png",
 								"tile_background_color": "mediumpurple"
 							}
 						}, {
@@ -343,7 +343,7 @@
 							"properties": {
 								"header": "LinkedIn",
 								"target_url": "https://www.linkedin.com/in/perezjquim",
-								"icon_src": "https://cdn-icons-png.flaticon.com/32/61/61109.png",
+								"icon_src": "https://cdn-icons-png.flaticon.com/64/61/61109.png",
 								"tile_background_color": "steelblue"
 							}
 						}, {
@@ -355,7 +355,7 @@
 							"properties": {
 								"header": "Spotify",
 								"target_url": "https://open.spotify.com/playlist/3j9aAlq5fmf6V5FXmsCUOS",
-								"icon_src": "https://cdn-icons-png.flaticon.com/32/49/49097.png",
+								"icon_src": "https://cdn-icons-png.flaticon.com/64/49/49097.png",
 								"tile_background_color": "seagreen"
 							}
 						}, {
@@ -367,7 +367,7 @@
 							"properties": {
 								"header": "Instagram",
 								"target_url": "https://instagram.com/quimmaisjuramaismente",
-								"icon_src": "https://cdn-icons-png.flaticon.com/32/174/174855.png",
+								"icon_src": "https://cdn-icons-png.flaticon.com/64/174/174855.png",
 								"tile_background_color": "palevioletred"
 							}
 						}]
@@ -394,10 +394,12 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "SAP Community Blog Posts",
-								"target_url": "https://people.sap.com/joaquim.perez#content:blogposts",
+								"target_url": "https://community.sap.com/search/?author=joaquim.perez&by=updated&ct=blog",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
-								"tile_background_color": "lightskyblue"
-							}							
+								"tile_background_color": "lightskyblue",
+								"count_endpoint_url": "https://thingproxy.freeboard.io/fetch/https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&authorId=joaquim.perez",
+								"count_endpoint_property": "totalCount"
+							}										
 						}]
 					}],
 					"groups": [{
@@ -707,9 +709,11 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "SAP Community Blog Posts",
-								"target_url": "https://people.sap.com/joaquim.perez#content:blogposts",
+								"target_url": "https://community.sap.com/search/?author=joaquim.perez&by=updated&ct=blog",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
-								"tile_background_color": "lightskyblue"
+								"tile_background_color": "lightskyblue",
+								"count_endpoint_url": "https://thingproxy.freeboard.io/fetch/https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&authorId=joaquim.perez",
+								"count_endpoint_property": "totalCount"
 							}							
 						}]
 					}, {
@@ -726,7 +730,7 @@
 							"properties": {
 								"header": "GitHub",
 								"target_url": "https://github.com/perezjquim",
-								"icon_src": "https://cdn-icons-png.flaticon.com/32/25/25657.png",
+								"icon_src": "https://cdn-icons-png.flaticon.com/64/25/25657.png",
 								"tile_background_color": "mediumpurple"
 							}
 						}, {
@@ -738,7 +742,7 @@
 							"properties": {
 								"header": "LinkedIn",
 								"target_url": "https://www.linkedin.com/in/perezjquim",
-								"icon_src": "https://cdn-icons-png.flaticon.com/32/61/61109.png",
+								"icon_src": "https://cdn-icons-png.flaticon.com/64/61/61109.png",
 								"tile_background_color": "steelblue"
 							}
 						}, {
@@ -750,7 +754,7 @@
 							"properties": {
 								"header": "Spotify",
 								"target_url": "https://open.spotify.com/playlist/3j9aAlq5fmf6V5FXmsCUOS",
-								"icon_src": "https://cdn-icons-png.flaticon.com/32/49/49097.png",
+								"icon_src": "https://cdn-icons-png.flaticon.com/64/49/49097.png",
 								"tile_background_color": "seagreen"
 							}
 						}, {
@@ -762,7 +766,7 @@
 							"properties": {
 								"header": "Instagram",
 								"target_url": "https://instagram.com/quimmaisjuramaismente",
-								"icon_src": "https://cdn-icons-png.flaticon.com/32/174/174855.png",
+								"icon_src": "https://cdn-icons-png.flaticon.com/64/174/174855.png",
 								"tile_background_color": "palevioletred"
 							}
 						}]

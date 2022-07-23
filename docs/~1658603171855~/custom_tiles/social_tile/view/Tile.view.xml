@@ -4,7 +4,17 @@
     controllerName="com.perezjquim.showcase.custom_tiles.social_tile.controller.Tile">
 	<GenericTile header="{config>/header}" press="onTilePress">
 		<TileContent>
-			<ImageContent src="{config>/icon_src}" />
-		</TileContent>
+			<NumericContent 
+				nullifyValue="false"
+				icon="{config>/icon_src}"
+				value="{ 
+					parts: 
+					[
+						'config>/count_endpoint_url',
+						'config>/count_endpoint_property'
+					],
+					formatter: '.fetchCount'
+				}"/>
+		</TileContent>	
 	</GenericTile>
 </mvc:View>

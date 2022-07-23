@@ -630,7 +630,7 @@
 						}]
 					}, {
 						"id": "ZUI5_G_WEB_LIBS",
-						"title": "5 - Web - Libraries",
+						"title": "6 - Web - Libraries",
 						"isVisible": true,
 						"isGroupLocked": true,
 						"tiles": [{

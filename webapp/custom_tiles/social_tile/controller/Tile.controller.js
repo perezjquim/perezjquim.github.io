@@ -31,19 +31,21 @@ sap.ui.define([
 			{
 				if(sEndpoint)
 				{
-					const oResponse = await fetch(sEndpoint);
+					const oResponse = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(sEndpoint)}`);
 					if(oResponse.ok)
 					{
+						const oJSONResponse = await oResponse.json();
+						const sContents = oJSONResponse.contents;
 						if(sProperty)
 						{
-							const oResponseJSON = await oResponse.json();
+							const oContents = JSON.parse(sContents);
 							return sProperty.split('.').reduce(function(oPrev, sCurr) {
 								return oPrev ? oPrev[sCurr] : null
-							}, oResponseJSON)
+							}, oContents)
 						}
 						else
 						{
-							const iValue = await oResponse.text();
+							const iValue = sContents;
 							return iValue;
 						}
 					}

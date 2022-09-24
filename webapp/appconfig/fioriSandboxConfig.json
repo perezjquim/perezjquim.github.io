@@ -397,7 +397,7 @@
 								"target_url": "https://community.sap.com/search/?author=joaquim.perez&by=updated&ct=blog",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
 								"tile_background_color": "lightskyblue",
-								"count_endpoint_url": "https://thingproxy.freeboard.io/fetch/https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&authorId=joaquim.perez",
+								"count_endpoint_url": "https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&authorId=joaquim.perez",
 								"count_endpoint_property": "totalCount"
 							}										
 						}]
@@ -683,6 +683,33 @@
 								"icon_src": "sap-icon://work-history",
 								"target_url": "https://drive.google.com/file/d/1TvWsQaL3EBEbuvRGMmJJYld0jplPMwgr/view"
 							}							
+						}, {
+							"id": "github-stats-1",
+							"namespace": "com.perezjquim.showcase.custom_tiles.embed_tile",
+							"path": "./custom_tiles/embed_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.embed_tile",
+							"properties": {
+								"embed_url": "https://github-readme-stats.vercel.app/api?username=perezjquim&show_icons=true&count_private=true&hide_border=true"
+							}							
+						}, {
+							"id": "github-stats-2",
+							"namespace": "com.perezjquim.showcase.custom_tiles.embed_tile",
+							"path": "./custom_tiles/embed_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.embed_tile",
+							"properties": {
+								"embed_url": "https://github-readme-stats.vercel.app/api/top-langs/?username=perezjquim&layout=compact&hide_border=true"
+							}							
+						}, {
+							"id": "github-stats-3",
+							"namespace": "com.perezjquim.showcase.custom_tiles.embed_tile",
+							"path": "./custom_tiles/embed_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.embed_tile",
+							"properties": {
+								"embed_url": "https://github-readme-streak-stats.herokuapp.com/?user=perezjquim&hide_border=true"
+							}							
 						}]
 					}, {
 						"id": "ZUI5_G_SAPCOMMUNITY",
@@ -712,7 +739,7 @@
 								"target_url": "https://community.sap.com/search/?author=joaquim.perez&by=updated&ct=blog",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
 								"tile_background_color": "lightskyblue",
-								"count_endpoint_url": "https://thingproxy.freeboard.io/fetch/https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&authorId=joaquim.perez",
+								"count_endpoint_url": "https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&authorId=joaquim.perez",
 								"count_endpoint_property": "totalCount"
 							}							
 						}]

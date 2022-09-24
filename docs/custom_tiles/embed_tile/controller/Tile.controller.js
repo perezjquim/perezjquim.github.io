@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(e){return e.extend("com.perezjquim.showcase.custom_tiles.embed_tile.controller.Tile",{formatContent:function(e){return`<embed src='${e}' width='100%' height='100%'/>`}})});

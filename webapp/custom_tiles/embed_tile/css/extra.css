@@ -1,0 +1,13 @@
+.z_outer_tile
+{
+	background: none !important;
+	width: 22.5rem;
+}
+.z_embed_tile *
+{
+	height: 100%;
+}
+.z_embed_tile .sapMGTHdrContent
+{
+	display: none;
+}

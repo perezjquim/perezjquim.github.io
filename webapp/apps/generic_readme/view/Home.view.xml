@@ -4,6 +4,6 @@
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc">
     <Page showHeader="false" showFooter="false" showSubHeader="false" enableScrolling="false">
-        <core:HTML id="embed-repo" content="&lt;embed src='https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https://assets.cdn.sap.com/sapcom/docs/2015/07/c06ac591-5b7c-0010-82c7-eda71af511fa.pdf' width='100%' height='100%'/&gt;"/> 
+        <core:HTML id="embed-repo"/> 
     </Page>
 </mvc:View>

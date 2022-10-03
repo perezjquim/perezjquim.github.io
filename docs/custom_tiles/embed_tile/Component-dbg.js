@@ -24,8 +24,8 @@ sap.ui.define([
 
 		_hideOuterTile: function() {
 			const oContainer = this.oContainer;
-			const oOuterTile = oContainer.getParent();
-			oOuterTile.addStyleClass("z_outer_tile");
+			const oEmbedTile = oContainer.getParent();
+			oEmbedTile.addStyleClass("z_outer_tile");
 		}
 	});
 });

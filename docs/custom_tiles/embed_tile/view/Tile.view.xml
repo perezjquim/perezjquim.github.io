@@ -8,7 +8,7 @@
 		frameType="TwoByOne"
 		pressEnabled="false">
 		<TileContent>
-			<core:HTML content="{ path: 'config>/embed_url', formatter: '.formatContent' }" width="100%" height="100%"	/>
+			<core:HTML content="{ path: 'config>/embed_url', formatter: '.formatContent' }"	/>
 		</TileContent>
 	</GenericTile>
 </mvc:View>

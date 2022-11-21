@@ -780,7 +780,7 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "Spotify",
-								"target_url": "https://open.spotify.com/playlist/3j9aAlq5fmf6V5FXmsCUOS",
+								"target_url": "https://open.spotify.com/embed-legacy/playlist/3j9aAlq5fmf6V5FXmsCUOS?utm_source=generator",
 								"icon_src": "https://cdn-icons-png.flaticon.com/64/49/49097.png",
 								"tile_background_color": "seagreen"
 							}

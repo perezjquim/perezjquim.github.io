@@ -366,7 +366,7 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "Instagram",
-								"target_url": "https://instagram.com/quimmaisjuramaismente",
+								"target_url": "https://instagram.com/quim.possible",
 								"icon_src": "https://cdn-icons-png.flaticon.com/64/174/174855.png",
 								"tile_background_color": "palevioletred"
 							}
@@ -792,7 +792,7 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "Instagram",
-								"target_url": "https://instagram.com/quimmaisjuramaismente",
+								"target_url": "https://instagram.com/quim.possible",
 								"icon_src": "https://cdn-icons-png.flaticon.com/64/174/174855.png",
 								"tile_background_color": "palevioletred"
 							}

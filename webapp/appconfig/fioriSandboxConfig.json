@@ -382,7 +382,7 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "SAP Community Profile",
-								"target_url": "https://people.sap.com/joaquim.perez",
+								"target_url": "https://community.sap.com/t5/user/viewprofilepage/user-id/785265",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
 								"tile_background_color": "lightskyblue"
 							}							
@@ -394,10 +394,10 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "SAP Community Blog Posts",
-								"target_url": "https://community.sap.com/search/?author=joaquim.perez&by=updated&ct=blog",
+								"target_url": "https://community.sap.com/t5/forums/searchpage/tab/message?filter=authorId&q=Joaquim%20Perez&noSynonym=false&author_id=785265&collapse_discussion=true",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
 								"tile_background_color": "lightskyblue",
-								"count_endpoint_url": "https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&authorId=joaquim.perez",
+								"count_endpoint_url": "https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&searchTerm=perezjquim",
 								"count_endpoint_property": "totalCount"
 							}										
 						}]
@@ -724,10 +724,10 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "SAP Community Profile",
-								"target_url": "https://people.sap.com/joaquim.perez",
+								"target_url": "https://community.sap.com/t5/user/viewprofilepage/user-id/785265",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
 								"tile_background_color": "lightskyblue"
-							}							
+							}								
 						}, {
 							"id": "sapcommunity-blogposts",
 							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
@@ -736,12 +736,12 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "SAP Community Blog Posts",
-								"target_url": "https://community.sap.com/search/?author=joaquim.perez&by=updated&ct=blog",
+								"target_url": "https://community.sap.com/t5/forums/searchpage/tab/message?filter=authorId&q=Joaquim%20Perez&noSynonym=false&author_id=785265&collapse_discussion=true",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
 								"tile_background_color": "lightskyblue",
-								"count_endpoint_url": "https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&authorId=joaquim.perez",
+								"count_endpoint_url": "https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&searchTerm=perezjquim",
 								"count_endpoint_property": "totalCount"
-							}							
+							}															
 						}]
 					}, {
 						"id": "ZUI5_G_SOCIAL",

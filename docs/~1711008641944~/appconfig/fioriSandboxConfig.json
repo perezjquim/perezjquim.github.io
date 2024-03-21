@@ -316,7 +316,7 @@
 							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"properties": {
 								"header": "Curriculum Vitae",
-								"target_url": "https://drive.google.com/file/d/1TvWsQaL3EBEbuvRGMmJJYld0jplPMwgr/view"
+								"target_url": "https://drive.google.com/file/d/1vEt7pqgt66-P8j6D3KuvBNvxMzZn3KWy/view?usp=sharing"
 							}							
 						}]
 					}, {
@@ -681,7 +681,7 @@
 							"properties": {
 								"header": "Curriculum Vitae",
 								"icon_src": "sap-icon://work-history",
-								"target_url": "https://drive.google.com/file/d/1TvWsQaL3EBEbuvRGMmJJYld0jplPMwgr/view"
+								"target_url": "https://drive.google.com/file/d/1vEt7pqgt66-P8j6D3KuvBNvxMzZn3KWy/view?usp=sharing"
 							}							
 						}, {
 							"id": "github-stats-1",

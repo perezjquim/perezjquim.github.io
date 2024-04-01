@@ -331,8 +331,8 @@
 							"properties": {
 								"header": "GitHub",
 								"target_url": "https://github.com/perezjquim",
-								"icon_src": "https://cdn-icons-png.flaticon.com/64/25/25657.png",
-								"tile_background_color": "mediumpurple"
+								"icon_src": "./images/github.png",
+								"tile_background": "#6060ed"
 							}
 						}, {
 							"id": "social-linkedin",
@@ -343,8 +343,8 @@
 							"properties": {
 								"header": "LinkedIn",
 								"target_url": "https://www.linkedin.com/in/perezjquim",
-								"icon_src": "https://cdn-icons-png.flaticon.com/64/61/61109.png",
-								"tile_background_color": "steelblue"
+								"icon_src": "./images/linkedin.png",
+								"tile_background": "#047bbb"
 							}
 						}, {
 							"id": "social-spotify",
@@ -355,8 +355,20 @@
 							"properties": {
 								"header": "Spotify",
 								"target_url": "https://open.spotify.com/user/perezjquim",
-								"icon_src": "https://cdn-icons-png.flaticon.com/64/49/49097.png",
-								"tile_background_color": "seagreen"
+								"icon_src": "./images/spotify.png",
+								"tile_background": "#1cd464"
+							}
+						}, {
+							"id": "social-spotify-pod",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "Spotify for Podcasters",
+								"target_url": "https://podcasters.spotify.com/pod/show/perezjquim",
+								"icon_src": "./images/spotify.png",
+								"tile_background": "#594daf"
 							}
 						}, {
 							"id": "social-instagram",
@@ -367,8 +379,8 @@
 							"properties": {
 								"header": "Instagram",
 								"target_url": "https://instagram.com/quim.possible",
-								"icon_src": "https://cdn-icons-png.flaticon.com/64/174/174855.png",
-								"tile_background_color": "palevioletred"
+								"icon_src": "./images/instagram.png",
+								"tile_background": "linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)"
 							}
 						}]
 					}, {
@@ -384,7 +396,7 @@
 								"header": "SAP Community Profile",
 								"target_url": "https://community.sap.com/t5/user/viewprofilepage/user-id/785265",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
-								"tile_background_color": "lightskyblue"
+								"tile_background": "lightskyblue"
 							}							
 						}, {
 							"id": "sapcommunity-blogposts",
@@ -396,7 +408,7 @@
 								"header": "SAP Community Blog Posts",
 								"target_url": "https://community.sap.com/t5/forums/searchpage/tab/message?filter=authorId&q=Joaquim%20Perez&noSynonym=false&author_id=785265&collapse_discussion=true",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
-								"tile_background_color": "lightskyblue",
+								"tile_background": "lightskyblue",
 								"count_endpoint_url": "https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&searchTerm=perezjquim",
 								"count_endpoint_property": "totalCount"
 							}										
@@ -726,7 +738,7 @@
 								"header": "SAP Community Profile",
 								"target_url": "https://community.sap.com/t5/user/viewprofilepage/user-id/785265",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
-								"tile_background_color": "lightskyblue"
+								"tile_background": "lightskyblue"
 							}								
 						}, {
 							"id": "sapcommunity-blogposts",
@@ -738,7 +750,7 @@
 								"header": "SAP Community Blog Posts",
 								"target_url": "https://community.sap.com/t5/forums/searchpage/tab/message?filter=authorId&q=Joaquim%20Perez&noSynonym=false&author_id=785265&collapse_discussion=true",
 								"icon_src": "https://cdn.icon-icons.com/icons2/2699/PNG/512/sap_logo_icon_170763.png",
-								"tile_background_color": "lightskyblue",
+								"tile_background": "lightskyblue",
 								"count_endpoint_url": "https://searchproxy.api.community.sap.com/api/v1/search?limit=1&contentTypes=blogpost&searchTerm=perezjquim",
 								"count_endpoint_property": "totalCount"
 							}															
@@ -757,8 +769,8 @@
 							"properties": {
 								"header": "GitHub",
 								"target_url": "https://github.com/perezjquim",
-								"icon_src": "https://cdn-icons-png.flaticon.com/64/25/25657.png",
-								"tile_background_color": "mediumpurple"
+								"icon_src": "./images/github.png",
+								"tile_background": "#6060ed"
 							}
 						}, {
 							"id": "social-linkedin",
@@ -769,8 +781,8 @@
 							"properties": {
 								"header": "LinkedIn",
 								"target_url": "https://www.linkedin.com/in/perezjquim",
-								"icon_src": "https://cdn-icons-png.flaticon.com/64/61/61109.png",
-								"tile_background_color": "steelblue"
+								"icon_src": "./images/linkedin.png",
+								"tile_background": "#047bbb"
 							}
 						}, {
 							"id": "social-spotify",
@@ -781,10 +793,22 @@
 							"properties": {
 								"header": "Spotify",
 								"target_url": "https://open.spotify.com/user/perezjquim",
-								"icon_src": "https://cdn-icons-png.flaticon.com/64/49/49097.png",
-								"tile_background_color": "seagreen"
+								"icon_src": "./images/spotify.png",
+								"tile_background": "#1cd464"
 							}
 						}, {
+							"id": "social-spotify-pod",
+							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"path": "./custom_tiles/social_tile",
+							"moduleType": "UIComponent",
+							"moduleName": "com.perezjquim.showcase.custom_tiles.social_tile",
+							"properties": {
+								"header": "Spotify for Podcasters",
+								"target_url": "https://podcasters.spotify.com/pod/show/perezjquim",
+								"icon_src": "./images/spotify.png",
+								"tile_background": "#594daf"
+							}
+						},{
 							"id": "social-instagram",
 							"namespace": "com.perezjquim.showcase.custom_tiles.social_tile",
 							"path": "./custom_tiles/social_tile",
@@ -793,8 +817,8 @@
 							"properties": {
 								"header": "Instagram",
 								"target_url": "https://instagram.com/quim.possible",
-								"icon_src": "https://cdn-icons-png.flaticon.com/64/174/174855.png",
-								"tile_background_color": "palevioletred"
+								"icon_src": "./images/instagram.png",
+								"tile_background": "linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)"
 							}
 						}]
 					}]

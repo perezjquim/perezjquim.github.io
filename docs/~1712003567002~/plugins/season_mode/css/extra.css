@@ -5,7 +5,7 @@
   --z_header_gradient: linear-gradient( rgba( 200,200,200,.5 ), rgba( 200,200,200,.5 ) );
 }
 
-.z_winter .sapUiView
+.z_winter .sapUshellRenderer
 {
 	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/winter.gif');
 }
@@ -13,7 +13,7 @@
 {
 	background: var(--z_header_gradient), url(/plugins/season_mode/images/winter_header.jpg);
 }
-.z_spring .sapUiView
+.z_spring .sapUshellRenderer
 {
 	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/spring.gif');
 }
@@ -21,7 +21,7 @@
 {
 	background: var(--z_header_gradient), url(/plugins/season_mode/images/spring_header.jpg);
 }
-.z_summer .sapUiView
+.z_summer .sapUshellRenderer
 {
 	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/summer.gif');
 }
@@ -29,7 +29,7 @@
 {
 	background: var(--z_header_gradient), url(/plugins/season_mode/images/summer_header.jpg);
 }
-.z_autumn .sapUiView
+.z_autumn .sapUshellRenderer
 {
 	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/autumn.gif');
 }
@@ -37,7 +37,7 @@
 {
 	background: var(--z_header_gradient), url(/plugins/season_mode/images/autumn_header.jpg);
 }
-.z_new_year .sapUiView
+.z_new_year .sapUshellRenderer
 {
 	background: var(--z_canvas_gradient), url('/plugins/season_mode/images/new_year.gif');
 }
@@ -46,11 +46,11 @@
 	background: var(--z_header_gradient), url(/plugins/season_mode/images/new_year_header.png);
 }
 
-.z_winter .sapUiView,
-.z_spring .sapUiView,
-.z_summer .sapUiView,
-.z_autumn .sapUiView,
-.z_new_year .sapUiView,
+.z_winter .sapUshellRenderer,
+.z_spring .sapUshellRenderer,
+.z_summer .sapUshellRenderer,
+.z_autumn .sapUshellRenderer,
+.z_new_year .sapUshellRenderer,
 .z_winter .sapUshellShellHeader,
 .z_spring .sapUshellShellHeader,
 .z_summer .sapUshellShellHeader,

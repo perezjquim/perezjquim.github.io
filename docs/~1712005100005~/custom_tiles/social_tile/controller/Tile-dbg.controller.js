@@ -7,13 +7,13 @@ sap.ui.define([
 		{
 			const oSource = oEvent.getSource();
 			const oConfigModel = oSource.getModel("config");
-			const sBackgroundColor = oConfigModel.getProperty("/tile_background_color");
+			const sBackground = oConfigModel.getProperty("/tile_background");
 
-			if(sBackgroundColor)
+			if(sBackground)
 			{			
 				const oTile = oSource && oSource.getContent() && oSource.getContent()[0];
 				const oDomRef = oTile.getDomRef();
-				$(oDomRef).css("background-color", sBackgroundColor);
+				$(oDomRef).css("background", sBackground);
 			}
 		},
 

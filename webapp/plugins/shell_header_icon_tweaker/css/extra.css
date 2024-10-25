@@ -5,4 +5,5 @@
 	background-image: url( '/assets/images/icon.jpeg' ) !important;
 	padding: 16px !important;
 	background-size: contain !important;
+	border-radius: inherit !important;
 }

@@ -27,7 +27,7 @@ sap.ui.define([
 			if (oCurrentTheme) {
 				const sClass = oCurrentTheme.class_name;
 				$("body").addClass(sClass);
-				$("body").append("<z_season_message_container><z_season_message/></z_season_message_container>");
+				//$("body").append("<z_season_message_container><z_season_message/></z_season_message_container>");
 			}
 		}
 	});

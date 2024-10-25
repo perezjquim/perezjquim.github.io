@@ -1,4 +1,8 @@
-#userActionsMenuHeaderButton,#sf
+#userActionsMenuHeaderButton,.sapUshellShellHeadSearchContainer,#sf,.sapUshellAppTitleMenuIcon
 {
-    display: none;
+    display: none !important;
+}
+.sapUshellHeadTitle
+{
+    pointer-events: none !important;
 }

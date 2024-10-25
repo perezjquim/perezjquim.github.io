@@ -1,0 +1,15 @@
+.z_outer_tile
+{
+	background: none !important;
+	width: 22.5rem;
+}
+.z_career_tile
+{
+	background-size: 25% !important;
+    background-repeat: no-repeat !important;
+    background-position: top !important;
+}
+.z_career_tile .sapMFT
+{
+	white-space: break-spaces !important;
+}

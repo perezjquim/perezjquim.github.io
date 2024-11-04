@@ -25,21 +25,19 @@ sap.ui.define([
 
 		fetchCount: async function (sEndpoint, sProperty) {
 			if (sEndpoint) {
-				var iNoOfTries = 5;
+				var iNoOfTries = 2;
 				while (iNoOfTries > 0) {
 					try {
-						const oResponse = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(sEndpoint)}`);
+						const oResponse = await fetch(`https://corsproxy.io/?${encodeURIComponent(sEndpoint)}`);
 						if (oResponse.ok) {
 							const oJSONResponse = await oResponse.json();
-							const sContents = oJSONResponse.contents;
 							if (sProperty) {
-								const oContents = JSON.parse(sContents);
 								return sProperty.split('.').reduce(function (oPrev, sCurr) {
 									return oPrev ? oPrev[sCurr] : null
-								}, oContents)
+								}, oJSONResponse)
 							}
 							else {
-								const iValue = sContents;
+								const iValue = oJSONResponse;
 								return iValue;
 							}
 						}

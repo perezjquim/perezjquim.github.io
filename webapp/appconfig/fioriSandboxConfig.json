@@ -128,8 +128,8 @@
 										"target_url": "https://podcasters.spotify.com/pod/show/perezjquim",
 										"icon_src": "./images/spotify.png",
 										"tile_background": "#594daf",
-										"count_endpoint_url": "https://rephonic.com/_next/data/C8QQySB3WwHfJfGvCiJ90/podcasts/quim-quer-saber.json",
-										"count_endpoint_property": "pageProps.rawPodcast.num_episodes"
+										"count_endpoint_url": "https://itunes.apple.com/search?media=podcast&term=Quim%20Quer%20Saber",
+										"count_endpoint_property": "results.0.trackCount"
 									}
 								},
 								{
@@ -143,8 +143,8 @@
 										"target_url": "https://open.spotify.com/show/7dNBVD7O3cMaGLqu1RzQxb",
 										"icon_src": "./images/spotify.png",
 										"tile_background": "#1cd464",
-										"count_endpoint_url": "https://rephonic.com/_next/data/C8QQySB3WwHfJfGvCiJ90/podcasts/quim-quer-saber.json",
-										"count_endpoint_property": "pageProps.rawPodcast.num_episodes"										
+										"count_endpoint_url": "https://itunes.apple.com/search?media=podcast&term=Quim%20Quer%20Saber",
+										"count_endpoint_property": "results.0.trackCount"								
 									}
 								},								
 								{
@@ -158,8 +158,8 @@
 										"target_url": "https://podcasts.apple.com/pt/podcast/quim-quer-saber/id1737362925",
 										"icon_src": "./images/apple-podcasts.png",
 										"tile_background": "#ffffff",
-										"count_endpoint_url": "https://rephonic.com/_next/data/C8QQySB3WwHfJfGvCiJ90/podcasts/quim-quer-saber.json",
-										"count_endpoint_property": "pageProps.rawPodcast.num_episodes"										
+										"count_endpoint_url": "https://itunes.apple.com/search?media=podcast&term=Quim%20Quer%20Saber",
+										"count_endpoint_property": "results.0.trackCount"								
 									}
 								},
 								{
@@ -173,8 +173,8 @@
 										"target_url": "https://music.youtube.com/playlist?list=PLvU0QQV8uAgZOG7F__Qw9W6v4XpPV5bzq&si=0tP9H6nR_bI1uoFU",
 										"icon_src": "./images/youtube-music.png",
 										"tile_background": "#ffffff",
-										"count_endpoint_url": "https://rephonic.com/_next/data/C8QQySB3WwHfJfGvCiJ90/podcasts/quim-quer-saber.json",
-										"count_endpoint_property": "pageProps.rawPodcast.num_episodes"										
+										"count_endpoint_url": "https://itunes.apple.com/search?media=podcast&term=Quim%20Quer%20Saber",
+										"count_endpoint_property": "results.0.trackCount"										
 									}
 								},
 								{

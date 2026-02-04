@@ -28,16 +28,17 @@ sap.ui.define([
 				var iNoOfTries = 2;
 				while (iNoOfTries > 0) {
 					try {
-						const oResponse = await fetch(`https://corsproxy.io/?${encodeURIComponent(sEndpoint)}`);
+						const oResponse = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(sEndpoint)}`);
 						if (oResponse.ok) {
-							const oJSONResponse = await oResponse.json();
+							const oResponseJSON = await oResponse.json();
+							const oResponseContent = oResponseJSON && oResponseJSON.contents && JSON.parse(oResponseJSON.contents);
 							if (sProperty) {
 								return sProperty.split('.').reduce(function (oPrev, sCurr) {
 									return oPrev ? oPrev[sCurr] : null
-								}, oJSONResponse)
+								}, oResponseContent)
 							}
 							else {
-								const iValue = oJSONResponse;
+								const iValue = oResponseContent;
 								return iValue;
 							}
 						}

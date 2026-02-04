@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "ui5 build -a --clean-dest --dest=docs --include-task=generateCachebusterInfo && touch docs/.nojekyll"
+    "deploy": "ui5 build -a --clean-dest --dest=docs --include-task=generateCachebusterInfo && touch docs/.nojekyll",
+    "start": "ui5 serve"
   },
   "repository": {
     "type": "git",
